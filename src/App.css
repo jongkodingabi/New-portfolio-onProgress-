@@ -1,6 +1,18 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@keyframes loop-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-loop-scroll {
+  animation: loop-scroll 20s linear infinite;
+}
 /* @custom-variant dark (&:is(.dark *)); */
 
 /* #root {

@@ -21,7 +21,12 @@ export function Hero() {
 
       {/* Hero Content */}
       <div className="absolute z-10 text-white flex flex-col items-center justify-center">
-        <img src={Logo} alt="myLogo" className="relative z-[999] w-25" />
+        <img
+          src={Logo}
+          alt="myLogo"
+          className="relative z-[999] w-25"
+          data-aos="fade-up"
+        />
         <p className="pointer-events-none text-center bg-gradient-to-t from-slate-300 to-gray-500 bg-clip-text text-transparent text-xl font-medium leading-none mb-2">
           ABISAM HAZIM
         </p>
