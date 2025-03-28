@@ -4,7 +4,7 @@ import Logo from "../assets/myLogo.png";
 
 export function Hero() {
   return (
-    <div className="absolute top-0 bg-black w-full h-[100vh] flex items-center justify-center text-center overflow-x-hidden">
+    <div className="absolute top-0 bg-black w-screen h-[100vh] flex items-center justify-center text-center overflow-x-hidden">
       {/* Particles Background */}
       <div className="absolute inset-0 z-10">
         <Particles
@@ -36,7 +36,7 @@ export function Hero() {
         <p className="py-3 text-center">
           "Elevating Digital Experiences with Passion & Precision."
         </p>
-        <button className="z-[9999] py-2 px-4 bg-gray-100 rounded-full">
+        <button className="z-20 py-2 px-4 bg-gray-100 rounded-full">
           Take a Journey
         </button>
       </div>
