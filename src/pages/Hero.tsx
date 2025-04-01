@@ -3,14 +3,7 @@ import ScrollVelocity from "@/components/reactbits/ScrollVelocity";
 import Logo from "../assets/myLogo.png";
 import MainButton from "@/components/button/MainButton";
 import Header from "@/components/Header";
-import {
-  VscHome,
-  VscArchive,
-  VscAccount,
-  VscSettingsGear,
-  VscPerson,
-  VscCode,
-} from "react-icons/vsc";
+import { VscHome, VscCode } from "react-icons/vsc";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
