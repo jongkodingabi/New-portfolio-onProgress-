@@ -35,8 +35,7 @@ export function About() {
       <div className="p-3">
         <img
           src={Profile}
-          alt=""
-          data-aos="fade-up"
+          alt="Profile photo"
           className="rounded-full w-65 md:w-80 mt-20 mb-8 hover:shadow-lg hover:shadow-gray-500 hover:scale-105 transition-all"
         />
         <p className="text-lg font-semibold space-x-2" data-aos="fade-up">
