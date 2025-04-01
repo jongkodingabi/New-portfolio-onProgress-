@@ -16,7 +16,7 @@ function App() {
       <section className="overflow-x-hidden">
         <Hero />
       </section>
-      <section className="overflow-x-hidden">
+      <section className="overflow-x-hidden" id="#about">
         <About />
       </section>
     </>

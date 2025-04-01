@@ -13,6 +13,7 @@ import Figma from "../assets/skills/Figma.png";
 import Github from "../assets/skills/GitHub.png";
 import Gitlab from "../assets/skills/GitLab.png";
 import VSCODE from "../assets/skills/VisualStudioCode.png";
+import Resume from "../assets/resume.svg";
 
 export function About() {
   return (
@@ -35,7 +36,8 @@ export function About() {
         <img
           src={Profile}
           alt=""
-          className="rounded-full w-80 mt-20 mb-8 hover:shadow-lg hover:shadow-gray-500 hover:scale-105 transition-all"
+          data-aos="fade-up"
+          className="rounded-full w-65 md:w-80 mt-20 mb-8 hover:shadow-lg hover:shadow-gray-500 hover:scale-105 transition-all"
         />
         <p className="text-lg font-semibold space-x-2" data-aos="fade-up">
           Abisam Hazim
@@ -46,7 +48,7 @@ export function About() {
       </div>
       <div className="flex justifiy-center">
         <h2
-          className="text-3xl font-light mx-40 p-10 text-center font-mono"
+          className="text-md md:text-3xl font-light p-8 md:mx-40 md:p-10 text-center font-mono"
           data-aos="fade-up"
         >
           <span className="font-bold">
@@ -57,7 +59,14 @@ export function About() {
           I love creating and designing friendly user website.
         </h2>
       </div>
-      <button className="bg-red-500">Download CV</button>
+      <button className="group mb-3 px-4 py-3 rounded-full inline-flex border border-white bg-[##1a1a1a] hover:bg-white hover:text-black transition-all ease-in-out">
+        <img
+          src={Resume}
+          className="w-5 mr-2 group-hover:text-black group-hover:filter group-hover:invert"
+          alt=""
+        />
+        Download CV
+      </button>
       <Slider
         width="250px"
         duration={40}
@@ -69,84 +78,84 @@ export function About() {
           <img
             src={HTML}
             alt="any"
-            className="w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
+            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
           />
         </Slider.Slide>
         <Slider.Slide>
           <img
             src={CSS}
             alt="any2"
-            className="w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
+            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
           />
         </Slider.Slide>
         <Slider.Slide>
           <img
             src={Tailwind}
             alt="any3"
-            className="w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
+            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
           />
         </Slider.Slide>
         <Slider.Slide>
           <img
             src={Vite}
             alt="any4"
-            className="w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
+            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
           />
         </Slider.Slide>
         <Slider.Slide>
           <img
             src={Vue}
             alt="any5"
-            className="w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
+            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
           />
         </Slider.Slide>
         <Slider.Slide>
           <img
             src={React}
             alt="any6"
-            className="w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
+            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
           />
         </Slider.Slide>
         <Slider.Slide>
           <img
             src={Laravel}
             alt="any7"
-            className="w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
+            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
           />
         </Slider.Slide>
         <Slider.Slide>
           <img
             src={PHP}
             alt="any8"
-            className="w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
+            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
           />
         </Slider.Slide>
         <Slider.Slide>
           <img
             src={Figma}
             alt="any9"
-            className="w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
+            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
           />
         </Slider.Slide>
         <Slider.Slide>
           <img
             src={Github}
             alt="any10"
-            className="w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
+            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
           />
         </Slider.Slide>
         <Slider.Slide>
           <img
             src={Gitlab}
             alt="any11"
-            className="w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
+            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
           />
         </Slider.Slide>
         <Slider.Slide>
           <img
             src={VSCODE}
             alt="any12"
-            className="w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
+            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
           />
         </Slider.Slide>
       </Slider>

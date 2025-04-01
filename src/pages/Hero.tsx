@@ -1,6 +1,7 @@
 import Particles from "../components/reactbits/Particles";
 import ScrollVelocity from "@/components/reactbits/ScrollVelocity";
 import Logo from "../assets/myLogo.png";
+import MainButton from "@/components/button/MainButton";
 
 export function Hero() {
   return (
@@ -38,12 +39,10 @@ export function Hero() {
           ]}
           className="custom-scroll-text"
         />
-        <p className="py-3 text-center">
+        <p className="p-5 mx-4 text-sm md:text-lg text-center">
           "Elevating Digital Experiences with Passion & Precision."
         </p>
-        <button className="z-20 py-2 px-4 bg-gray-100 rounded-full">
-          Take a Journey
-        </button>
+        <MainButton title="Take a Journey" />
       </div>
     </div>
   );
