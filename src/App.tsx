@@ -13,10 +13,10 @@ function App() {
   });
   return (
     <>
-      <section className="overflow-x-hidden">
+      <section className="overflow-hidden scrollbar-hidden">
         <Hero />
       </section>
-      <section className="overflow-x-hidden" id="#about">
+      <section className="overflow-hidden" id="#about">
         <About />
       </section>
     </>

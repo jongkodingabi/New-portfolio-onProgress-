@@ -68,7 +68,7 @@ export function About() {
       </button>
       <Slider
         width="250px"
-        duration={40}
+        duration={20}
         pauseOnHover={true}
         blurBorders={false}
         blurBorderColor={"#fff"}

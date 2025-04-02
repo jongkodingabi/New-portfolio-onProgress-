@@ -19,22 +19,26 @@ export function Hero() {
     {
       icon: <VscCode size={20} />,
       label: "Project",
-      onClick: () => alert("About!"),
+      onClick: () => window.open("/projects", "_self"),
     },
     {
       icon: <FaLinkedin size={20} />,
       label: "Linkedin",
-      onClick: () => alert("Profile!"),
+      onClick: () =>
+        window.open(
+          "https://www.linkedin.com/in/abisam-hazim-5853b4345",
+          "_blank"
+        ),
     },
     {
       icon: <FaGithub size={20} />,
       label: "Github",
-      onClick: () => alert("Settings!"),
+      onClick: () => window.open("https://github.com/jongkodingabi", "_blank"),
     },
   ];
 
   return (
-    <div className="absolute top-0 bg-black w-screen h-[100vh] flex items-center justify-center text-center overflow-x-hidden">
+    <div className="absolute top-0 bg-black w-screen h-[100vh] flex items-center justify-center text-center overflow-x-hidden scrollbar-hidden">
       <Header className="absolute flex justify-between text-xl left-0 w-full z-20 bg-gradient-to-t from-slate-300 to-gray-500 bg-clip-text text-transparent" />
 
       <div className="absolute inset-0 z-10">

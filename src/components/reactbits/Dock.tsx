@@ -21,6 +21,7 @@ import React, {
 export type DockItemData = {
   icon: React.ReactNode;
   label: React.ReactNode;
+  ahref?: string;
   onClick: () => void;
   className?: string;
 };
@@ -40,6 +41,7 @@ type DockItemProps = {
   className?: string;
   children: React.ReactNode;
   onClick?: () => void;
+  ahref?: React.Ref<HTMLDivElement>;
   mouseX: MotionValue;
   spring: SpringOptions;
   distance: number;
