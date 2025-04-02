@@ -3,6 +3,9 @@ export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        impact: ["Impact", "sans-serif"],
+      },
       animation: {
         "loop-scroll": "loop-scroll 20s linear infinite",
       },

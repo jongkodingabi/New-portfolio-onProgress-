@@ -26,6 +26,13 @@ h1 {
   line-height: 1.1;
 }
 
+@font-face {
+  font-family: "Impact";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/impact.ttf") format("truetype");
+}
+
 /* button {
   border-radius: 8px;
   border: 1px solid transparent;

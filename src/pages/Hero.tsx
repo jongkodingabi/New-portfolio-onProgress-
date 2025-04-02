@@ -41,7 +41,7 @@ export function Hero() {
     <div className="absolute top-0 bg-black w-screen h-[100vh] flex items-center justify-center text-center overflow-x-hidden scrollbar-hidden">
       <Header className="absolute flex justify-between text-xl left-0 w-full z-20 bg-gradient-to-t from-slate-300 to-gray-500 bg-clip-text text-transparent" />
 
-      <div className="absolute inset-0 z-10">
+      <div className="absolute inset-0 z-0">
         <Particles
           particleColors={["#ffffff", "#ffffff"]}
           particleCount={1000}
@@ -71,7 +71,7 @@ export function Hero() {
             "FRONTEND DEVELOPER - DESIGNER -",
             "BACKEND DEVELOPER - SURVIVOR -",
           ]}
-          className="custom-scroll-text"
+          className="custom-scroll-text font-bold"
         />
         <p className="p-5 mx-4 text-sm md:text-lg text-center">
           "Elevating Digital Experiences with Passion & Precision."
