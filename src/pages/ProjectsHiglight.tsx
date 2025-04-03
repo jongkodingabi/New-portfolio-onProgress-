@@ -14,7 +14,7 @@ export default function ProjectsHiglight() {
       </span>
 
       <h1 className="text-3xl font-bold font-impact text-white mt-20">
-        Projects Highlight
+        Recent Projects
       </h1>
       <p className="text-lg font-light text-gray-400 mt-4">
         Here are some of my projects that I have worked on.
