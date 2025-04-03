@@ -17,8 +17,10 @@ export default function ProjectsCards({
     <div className="group rounded-xl bg-zinc-900 relative">
       <div className="flex flex-row space-x-4">
         <div className="p-10 mt-14 max-w-md">
-          <h1 className="text-2xl font-bold text-white text-left">{title}</h1>
-          <p className="text-lg font-light text-gray-400 mt-2 text-left">
+          <h1 className="text-2xl font-bold text-white opacity-45 group-hover:opacity-100 transition-all ease-in-out text-left">
+            {title}
+          </h1>
+          <p className="text-lg font-light text-gray-300 opacity-45 group-hover:opacity-100 mt-2 text-left">
             {description}
           </p>
           <a
@@ -41,7 +43,7 @@ export default function ProjectsCards({
           <img
             src={imageUrl}
             alt="Project Image"
-            className="h-max-2xl max-w-xl w-auto object-contain group-hover:scale-120 group-hover:rotate-3 transition-transform duration-300"
+            className="h-max-2xl max-w-xl w-auto object-contain opacity-40 group-hover:opacity-100 group-hover:scale-120 group-hover:rotate-3 transition-transform duration-300"
           />
         </div>
       </div>

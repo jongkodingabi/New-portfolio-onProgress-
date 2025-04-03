@@ -1,13 +1,17 @@
 import ProjectsCards from "@/components/reactbits/ProjectCard";
 import KataKita from "../assets/projects/kataKita.png";
 import BeedeGo from "../assets/projects/beedego.png";
+import YourMeals from "../assets/projects/YourMeals.png";
+import MainButton from "@/components/button/MainButton";
 
 export default function ProjectsHiglight() {
   return (
     <div className="bg-black w-screen flex flex-col items-center justify-center text-center">
-      <h1 className="flex justify-center items-center text-[10vw] font-extrabold text-white opacity-20 uppercase tracking-wide mt-20 w-screen">
-        PROJECT HIGHLIGHTS
-      </h1>
+      <span className="mx-auto whitespace-nowrap text-center text-[47px] font-extrabold text-white opacity-10 uppercase mt-20">
+        <span className="transform-none">
+          <h1 className="">PROJECT HIGHLIGHTS</h1>
+        </span>
+      </span>
 
       <h1 className="text-3xl font-bold font-impact text-white mt-20">
         Projects Highlight
@@ -32,7 +36,16 @@ export default function ProjectsHiglight() {
           cta="View Site"
           link="https://beedego-abisam-hazims-projects.vercel.app/"
         />
+        {/* Card Project 3 */}
+        <ProjectsCards
+          title="YourMeals App"
+          description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          imageUrl={YourMeals}
+          cta="View Site"
+          link="https://your-meals-app.netlify.app/"
+        />
       </div>
+      <MainButton title="See More" />
     </div>
   );
 }
