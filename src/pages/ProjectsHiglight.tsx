@@ -7,16 +7,16 @@ import MainButton from "@/components/button/MainButton";
 export default function ProjectsHiglight() {
   return (
     <div className="bg-black w-screen flex flex-col items-center justify-center text-center">
-      <span className="mx-auto whitespace-nowrap text-center text-[47px] font-extrabold text-white opacity-10 uppercase mt-20">
+      <span className="mx-auto whitespace-nowrap text-center text-[11px] md:text-[47px] font-extrabold text-white opacity-10 uppercase md:mt-20 mt-10">
         <span className="transform-none">
           <h1 className="">PROJECT HIGHLIGHTS</h1>
         </span>
       </span>
 
-      <h1 className="text-3xl font-bold font-impact text-white mt-20">
+      <h1 className="text-xs lg:text-3xl font-bold font-impact text-white mt-10 mx-2 lg:mt-20">
         Recent Projects
       </h1>
-      <p className="text-lg font-light text-gray-400 mt-4">
+      <p className="text-lg font-light text-gray-400 mt-4 sm:mx-2">
         Here are some of my projects that I have worked on.
       </p>
       <div className="flex flex-col space-y-18 justify-center items-center py-10">

@@ -8,18 +8,21 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 import Dock from "@/components/reactbits/Dock";
+import { useNavigate } from "react-router-dom";
 
 export function Hero() {
+  const navigate = useNavigate();
+
   const items = [
     {
       icon: <VscHome size={20} />,
       label: "Home",
-      onClick: () => alert("Home!"),
+      onClick: () => navigate("/"),
     },
     {
       icon: <VscCode size={20} />,
       label: "Project",
-      onClick: () => window.open("/projects", "_self"),
+      onClick: () => navigate("/projects"),
     },
     {
       icon: <FaLinkedin size={20} />,
@@ -68,12 +71,12 @@ export function Hero() {
         {/* <h1 className="text-5xl font-bold mb-4">Welcome to Our Website</h1> */}
         <ScrollVelocity
           texts={[
-            "FRONTEND DEVELOPER - DESIGNER -",
+            "FRONTEND DEVELOPER - DREAMER -",
             "BACKEND DEVELOPER - SURVIVOR -",
           ]}
-          className="custom-scroll-text font-bold"
+          className="custom-scroll-text md:text-[90px] tracking-tighter font-extrabold font-impact"
         />
-        <p className="p-5 mx-4 text-sm md:text-lg text-center">
+        <p className="p-5 mx-4 text-sm md:text-lg text-center font-semibold">
           "Elevating Digital Experiences with Passion & Precision."
         </p>
         <MainButton title="Take a Journey" />
