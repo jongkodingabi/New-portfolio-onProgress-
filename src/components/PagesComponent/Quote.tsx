@@ -1,7 +1,7 @@
 export default function Quote() {
   return (
     <div className="bg-black w-screen flex flex-col items-center justify-center text-center">
-      <span className="mx-auto z-0 absolute whitespace-nowrap text-center tracking-tighter text-4xl lg:text-[100px] font-extrabold text-white opacity-10 uppercase lg:mt-16 mt-4">
+      <span className="mx-auto z-0 absolute whitespace-nowrap text-center tracking-tighter text-4xl lg:text-[100px] font-extrabold text-white opacity-10 uppercase lg:mt-10 mt-4">
         <span className="transform-none">
           <h1 className="">QUOTE</h1>
         </span>

@@ -15,7 +15,7 @@ export default function ProjectsCards({
 }: CardsProps) {
   return (
     <div className="group rounded-xl bg-zinc-900 relative mx-4">
-      <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row-reverse md:space-x-4">
+      <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row-reverse">
         <div className="h-full w-full self-stretch flex items-center rounded-t-xl md:rounded-r-xl overflow-hidden">
           <img
             src={imageUrl}

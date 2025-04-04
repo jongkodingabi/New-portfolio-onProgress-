@@ -64,7 +64,7 @@ export function About() {
           className="w-5 mr-2 group-hover:text-black group-hover:filter group-hover:invert"
           alt=""
         />
-        Download CV
+        Resume / CV
       </button>
       <Slider
         width="250px"

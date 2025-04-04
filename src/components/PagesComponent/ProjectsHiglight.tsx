@@ -2,9 +2,11 @@ import ProjectsCards from "@/components/reactbits/ProjectCard";
 import KataKita from "@/assets/projects/kataKita.png";
 import BeedeGo from "@/assets/projects/beedego.png";
 import YourMeals from "@/assets/projects/YourMeals.png";
+import { useNavigate } from "react-router-dom";
 import MainButton from "@/components/button/MainButton";
 
 export default function ProjectsHiglight() {
+  const navigate = useNavigate();
   return (
     <div className="bg-black w-screen flex flex-col items-center justify-center text-center">
       <span className="mx-auto whitespace-nowrap text-center text-[11px] md:text-[47px] font-extrabold text-white opacity-10 uppercase md:mt-20 mt-10">
@@ -45,7 +47,7 @@ export default function ProjectsHiglight() {
           link="https://your-meals-app.netlify.app/"
         />
       </div>
-      <MainButton title="See More" />
+      <MainButton title="See More" onClick={() => navigate("/projects")} />
     </div>
   );
 }
