@@ -1,6 +1,6 @@
-import Particles from "../components/reactbits/Particles";
+import Particles from "../reactbits/Particles";
 import ScrollVelocity from "@/components/reactbits/ScrollVelocity";
-import Logo from "../assets/myLogo.png";
+import Logo from "@/assets/myLogo.png";
 import MainButton from "@/components/button/MainButton";
 import Header from "@/components/Header";
 import { VscHome, VscCode } from "react-icons/vsc";

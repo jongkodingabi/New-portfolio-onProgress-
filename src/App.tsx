@@ -1,11 +1,10 @@
 import { useEffect } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { About } from "./pages/About";
-import { Hero } from "./pages/Hero";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ProjectsHiglight from "./pages/ProjectsHiglight";
-import Quote from "./pages/Quote";
+import Home from "./pages/Home";
 
 function App() {
   useEffect(() => {
@@ -15,18 +14,11 @@ function App() {
   });
   return (
     <>
-      <section className="overflow-hidden scrollbar-hidden">
-        <Hero />
-      </section>
-      <section className="overflow-hidden" id="#about">
-        <About />
-      </section>
-      <section className="overflow-hidden" id="#projects">
-        <ProjectsHiglight />
-      </section>
-      <section className="overflow-hidden" id="#Quote">
-        <Quote />
-      </section>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
     </>
   );
 }

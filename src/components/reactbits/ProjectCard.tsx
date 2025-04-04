@@ -16,11 +16,11 @@ export default function ProjectsCards({
   return (
     <div className="group rounded-xl bg-zinc-900 relative mx-4">
       <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row-reverse md:space-x-4">
-        <div className="h-full self-stretch flex items-center rounded-t-xl md:rounded-r-xl overflow-hidden">
+        <div className="h-full w-full self-stretch flex items-center rounded-t-xl md:rounded-r-xl overflow-hidden">
           <img
             src={imageUrl}
             alt="Project Image"
-            className="h-auto max-w-full md:h-max-2xl md:max-w-xl w-auto object-contain opacity-40 group-hover:opacity-100 group-hover:scale-120 group-hover:rotate-3 transition-transform duration-300"
+            className="h-full w-full md:h-max-2xl md:max-w-xl object-contain opacity-40 group-hover:opacity-100 group-hover:scale-120 group-hover:rotate-3 transition-transform duration-300"
           />
         </div>
         <div className="p-6 md:p-10 mt-6 md:mt-14 max-w-full md:max-w-md">

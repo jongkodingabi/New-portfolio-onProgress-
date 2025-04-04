@@ -1,7 +1,7 @@
 import ProjectsCards from "@/components/reactbits/ProjectCard";
-import KataKita from "../assets/projects/kataKita.png";
-import BeedeGo from "../assets/projects/beedego.png";
-import YourMeals from "../assets/projects/YourMeals.png";
+import KataKita from "@/assets/projects/kataKita.png";
+import BeedeGo from "@/assets/projects/beedego.png";
+import YourMeals from "@/assets/projects/YourMeals.png";
 import MainButton from "@/components/button/MainButton";
 
 export default function ProjectsHiglight() {
