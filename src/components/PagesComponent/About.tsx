@@ -73,90 +73,28 @@ export function About() {
         blurBorders={false}
         blurBorderColor={"#fff"}
       >
-        <Slider.Slide>
-          <img
-            src={HTML}
-            alt="any"
-            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
-          />
-        </Slider.Slide>
-        <Slider.Slide>
-          <img
-            src={CSS}
-            alt="any2"
-            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
-          />
-        </Slider.Slide>
-        <Slider.Slide>
-          <img
-            src={Tailwind}
-            alt="any3"
-            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
-          />
-        </Slider.Slide>
-        <Slider.Slide>
-          <img
-            src={Vite}
-            alt="any4"
-            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
-          />
-        </Slider.Slide>
-        <Slider.Slide>
-          <img
-            src={Vue}
-            alt="any5"
-            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
-          />
-        </Slider.Slide>
-        <Slider.Slide>
-          <img
-            src={React}
-            alt="any6"
-            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
-          />
-        </Slider.Slide>
-        <Slider.Slide>
-          <img
-            src={Laravel}
-            alt="any7"
-            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
-          />
-        </Slider.Slide>
-        <Slider.Slide>
-          <img
-            src={PHP}
-            alt="any8"
-            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
-          />
-        </Slider.Slide>
-        <Slider.Slide>
-          <img
-            src={Figma}
-            alt="any9"
-            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
-          />
-        </Slider.Slide>
-        <Slider.Slide>
-          <img
-            src={Github}
-            alt="any10"
-            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
-          />
-        </Slider.Slide>
-        <Slider.Slide>
-          <img
-            src={Gitlab}
-            alt="any11"
-            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
-          />
-        </Slider.Slide>
-        <Slider.Slide>
-          <img
-            src={VSCODE}
-            alt="any12"
-            className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
-          />
-        </Slider.Slide>
+        {[
+          { src: HTML, alt: "HTML" },
+          { src: CSS, alt: "CSS" },
+          { src: Tailwind, alt: "Tailwind" },
+          { src: Vite, alt: "Vite" },
+          { src: Vue, alt: "Vue" },
+          { src: React, alt: "React" },
+          { src: Laravel, alt: "Laravel" },
+          { src: PHP, alt: "PHP" },
+          { src: Figma, alt: "Figma" },
+          { src: Github, alt: "Github" },
+          { src: Gitlab, alt: "Gitlab" },
+          { src: VSCODE, alt: "VSCODE" },
+        ].map((item, index) => (
+          <Slider.Slide key={index}>
+            <img
+              src={item.src}
+              alt={item.alt}
+              className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
+            />
+          </Slider.Slide>
+        ))}
       </Slider>
     </div>
   );
