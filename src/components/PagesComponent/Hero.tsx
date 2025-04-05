@@ -64,6 +64,7 @@ export function Hero() {
           alt="myLogo"
           className="relative z-[999] w-25"
           data-aos="fade-up"
+          loading="lazy"
         />
         <p className="pointer-events-none text-center bg-gradient-to-t from-slate-300 to-gray-500 bg-clip-text text-transparent text-xl font-medium leading-none mb-2">
           ABISAM HAZIM
