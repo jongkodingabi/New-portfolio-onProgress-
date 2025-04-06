@@ -17,7 +17,7 @@ import Resume from "@/assets/resume.svg";
 
 export function About() {
   return (
-    <div className="bg-black w-screen min-h-screen flex flex-col items-center justify-center text-center mt-[100vh]">
+    <div className="bg-black w-screen min-h-screen flex flex-col items-center justify-center text-center mt-[100vh] overflow-x-hidden">
       <div className="z-10 flex items-center justify-center w-full">
         <TextPressure
           text="Hello!"

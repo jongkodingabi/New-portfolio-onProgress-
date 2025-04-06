@@ -34,7 +34,7 @@ export default function Projects() {
     },
   ];
   return (
-    <div className="">
+    <>
       <div className="absolute top-0 bg-black bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 z-0 w-screen h-[100vh] flex items-center justify-center text-center overflow-x-hidden scrollbar-hidden">
         <div className="absolute top-5 w-full max-w-lg z-0">
           <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
@@ -44,7 +44,7 @@ export default function Projects() {
             My Projects
           </h1>
         </div>
-        <div className="flex flex-wrap justify-center items-center md:mt-40 z-0 gap-6">
+        <div className="flex flex-col sm:flex-row mx-4 md:flex-wrap justify-center items-center mt-[800px] sm:mt-80 md:mt-60 z-10 gap-6">
           {/* Cards */}
           <div className="group transition-all duration-300 ease-in-out rounded-xl bg-transparent border border-white relative mx-2 z-10 mt-10 hover:scale-105 hover:shadow-lg hover:shadow-gray-600 w-full sm:w-80 md:w-96">
             <div className="flex flex-col space-y-2 md:space-y-0">
@@ -55,7 +55,7 @@ export default function Projects() {
                   className="h-full w-full object-contain group-hover:scale-110 group-hover:rotate-2 transition-transform duration-300"
                 />
               </div>
-              <div className="p-4 md:p-6 mt-2 space-y-2">
+              <div className="p-4 md:p-4 mt-2 space-y-2">
                 <h1 className="text-sm md:text-lg lg:text-lg font-bold text-white transition-all ease-in-out text-left mb-5">
                   YourMeals
                 </h1>
@@ -76,7 +76,7 @@ export default function Projects() {
                   <p className="text-sm">MealDB</p>
                 </div>
               </div>
-              <div className="flex flex-row pl-4 mb-4">
+              <div className="flex flex-row p-2 mb-4">
                 <button className="cursor-pointer w-full sm:w-auto px-4 py-1 text-lg font-bold bg-white rounded-full text-black hover:bg-gray-200 transition-all duration-300 border border-white">
                   Visit site
                 </button>
@@ -93,7 +93,7 @@ export default function Projects() {
                   className="h-full w-full object-contain group-hover:scale-110 group-hover:rotate-2 transition-transform duration-300"
                 />
               </div>
-              <div className="p-4 md:p-6 mt-2 space-y-2">
+              <div className="p-4 md:p-4 mt-2 space-y-2">
                 <h1 className="text-sm md:text-lg lg:text-lg font-bold text-white transition-all ease-in-out text-left mb-5">
                   YourMeals
                 </h1>
@@ -114,7 +114,7 @@ export default function Projects() {
                   <p className="text-sm">MealDB</p>
                 </div>
               </div>
-              <div className="flex flex-row pl-4 mb-4">
+              <div className="flex flex-row p-2 mb-4">
                 <button className="cursor-pointer w-full sm:w-auto px-4 py-1 text-lg font-bold bg-white rounded-full text-black hover:bg-gray-200 transition-all duration-300 border border-white">
                   Visit site
                 </button>
@@ -130,6 +130,6 @@ export default function Projects() {
         baseItemSize={50}
         magnification={70}
       />
-    </div>
+    </>
   );
 }
