@@ -36,6 +36,14 @@ h1 {
   src: url("./assets/fonts/impact.ttf") format("truetype");
 }
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* button {
   border-radius: 8px;
   border: 1px solid transparent;
