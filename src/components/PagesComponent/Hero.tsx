@@ -41,7 +41,7 @@ export function Hero() {
   ];
 
   return (
-    <div className="absolute top-0 bg-black w-full h-[100vh] flex items-center justify-center text-center overflow-x-hidden scrollbar-hidden">
+    <div className="absolute top-0 bg-black w-screen h-[100vh] flex items-center justify-center text-center overflow-x-hidden scrollbar-hidden">
       <Header className="absolute flex justify-between text-xl left-0 w-full z-20 bg-gradient-to-t from-slate-300 to-gray-500 bg-clip-text text-transparent" />
 
       <div className="absolute inset-0 z-0">
