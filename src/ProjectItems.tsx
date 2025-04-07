@@ -1,5 +1,5 @@
 import YourMeals from "@/assets/projects/YourMeals.png";
-import BeedeGo from "@/assets/projects/BeedeGo.png";
+import BeedeGo from "@/assets/projects/beedego.png";
 import KataKita from "@/assets/projects/kataKita.png";
 import Caseths from "@/assets/projects/caseth-la-magasin_web.jpg";
 import TodoApp from "@/assets/projects/To-Do List App.png";
