@@ -40,13 +40,23 @@ const itemsProjects = [
     image: Caseths,
     title: "Caseths",
     description:
-      "Website that contains product information in the form of accessories, cart and payment gatheway",
+      "Website that contains product information in the form of accessories, and payment gatheway",
     tags: ["Laravel", "Tailwind CSS", "MySQL"],
     link: "https://github.com/jongkodingabi/KataKita",
     cta: "View github",
   },
   {
     id: 5,
+    image: TodoApp,
+    title: "To-Do App",
+    description:
+      "A to do list app that can save your work notes, I did this project to practice my vue skills",
+    tags: ["Vue.js", "CSS3"],
+    link: "https://github.com/jongkodingabi/KataKita",
+    cta: "View github",
+  },
+  {
+    id: 6,
     image: TodoApp,
     title: "To-Do App",
     description:
