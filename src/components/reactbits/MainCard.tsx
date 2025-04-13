@@ -5,6 +5,8 @@ type MainCardProps = {
   tags: string[];
   link: string;
   cta: string;
+  githubLink: string;
+  isLinked: boolean;
 };
 export default function MainCard({
   img,
@@ -12,7 +14,9 @@ export default function MainCard({
   description,
   tags,
   link,
+  githubLink,
   cta,
+  isLinked,
 }: MainCardProps) {
   return (
     <div className="group shadow-2xl transition-all duration-300 ease-in-out rounded-xl bg-transparent border border-white relative mx-2 z-10 mt-10 hover:scale-105 hover:shadow-lg hover:shadow-gray-600 w-full sm:w-80 md:w-96">
@@ -43,11 +47,19 @@ export default function MainCard({
           ))}
         </div>
         <div className="flex flex-row p-2 mb-4">
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            <button className="cursor-pointer w-full sm:w-auto px-4 py-1 text-lg font-bold bg-white rounded-full text-black hover:bg-gray-200 transition-all duration-300 border border-white">
-              {cta}
-            </button>
-          </a>
+          {isLinked && link ? (
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              <button className="cursor-pointer w-full sm:w-auto px-4 py-1 text-lg font-bold bg-white rounded-full text-black hover:bg-gray-200 transition-all duration-300 border border-white">
+                {cta}
+              </button>
+            </a>
+          ) : (
+            <a href={githubLink} target="_blank" rel="noopener noreferrer">
+              <button className="cursor-pointer w-full sm:w-auto px-4 py-1 text-lg font-bold bg-white rounded-full text-black hover:bg-gray-200 transition-all duration-300 border border-white">
+                {cta}
+              </button>
+            </a>
+          )}
         </div>
       </div>
     </div>

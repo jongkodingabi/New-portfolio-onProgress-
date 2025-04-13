@@ -13,7 +13,9 @@ const itemsProjects = [
       "A web application that allows users to search for recipes and save their favorite meals.",
     tags: ["Vue.js", "Tailwind CSS", "MealDB API"],
     link: "https://your-meals-app.netlify.app/",
+    github: "https://github.com/jongkodingabi/Meals-App",
     cta: "View site",
+    isLinked: true,
   },
   {
     id: 2,
@@ -23,7 +25,9 @@ const itemsProjects = [
       "A simple landing page for a design service, showcasing their projects and services.",
     tags: ["Vue.js", "Tailwind CSS"],
     link: "https://beedego-abisam-hazims-projects.vercel.app/",
+    github: "https://github.com/jongkodingabi/BeeDeGo",
     cta: "View site",
+    isLinked: true,
   },
   {
     id: 3,
@@ -32,8 +36,10 @@ const itemsProjects = [
     description:
       "An Indonesian dictionary application made with Flutter and Firebase",
     tags: ["Flutter", "Firebase"],
-    link: "https://github.com/jongkodingabi/KataKita",
+    link: "#",
+    github: "https://github.com/jongkodingabi/KataKita",
     cta: "View github",
+    isLinked: false,
   },
   {
     id: 4,
@@ -42,8 +48,10 @@ const itemsProjects = [
     description:
       "Website that contains product information in the form of accessories, and payment gatheway",
     tags: ["Laravel", "Tailwind CSS", "MySQL"],
-    link: "https://github.com/jongkodingabi/KataKita",
+    link: "#",
+    github: "https://github.com/jongkodingabi/KataKita",
     cta: "View github",
+    isLinked: false,
   },
   {
     id: 5,
@@ -53,17 +61,9 @@ const itemsProjects = [
       "A to do list app that can save your work notes, I did this project to practice my vue skills",
     tags: ["Vue.js", "CSS3"],
     link: "https://github.com/jongkodingabi/KataKita",
+    github: "https://github.com/jongkodingabi/TODO-List-App",
     cta: "View github",
-  },
-  {
-    id: 6,
-    image: TodoApp,
-    title: "To-Do App",
-    description:
-      "A to do list app that can save your work notes, I did this project to practice my vue skills",
-    tags: ["Vue.js", "CSS3"],
-    link: "https://github.com/jongkodingabi/KataKita",
-    cta: "View github",
+    isLinked: true,
   },
 ];
 

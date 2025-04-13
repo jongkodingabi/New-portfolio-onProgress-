@@ -1,19 +1,7 @@
 import TextPressure from "../reactbits/TextPressure";
 import Profile from "@/assets/Profile.png";
-import Slider from "react-infinite-logo-slider";
-import HTML from "@/assets/skills/HTML.png";
-import CSS from "@/assets/skills/CSS完全に理解した.png";
-import Tailwind from "@/assets/skills/Tailwindcss6.png";
-import React from "@/assets/skills/React.png";
-import Vue from "@/assets/skills/Vue.png";
-import Laravel from "@/assets/skills/Laravel.png";
-import PHP from "@/assets/skills/default.png";
-import Vite from "@/assets/skills/Vite.png";
-import Figma from "@/assets/skills/Figma.png";
-import Github from "@/assets/skills/GitHub.png";
-import Gitlab from "@/assets/skills/GitLab.png";
-import VSCODE from "@/assets/skills/VisualStudioCode.png";
 import Resume from "@/assets/resume.svg";
+import SliderComponent from "@/components/reactbits/SliderComponent";
 
 export function About() {
   return (
@@ -66,36 +54,7 @@ export function About() {
         />
         Resume / CV
       </button>
-      <Slider
-        width="250px"
-        duration={20}
-        pauseOnHover={true}
-        blurBorders={false}
-        blurBorderColor={"#fff"}
-      >
-        {[
-          { src: HTML, alt: "HTML" },
-          { src: CSS, alt: "CSS" },
-          { src: Tailwind, alt: "Tailwind" },
-          { src: Vite, alt: "Vite" },
-          { src: Vue, alt: "Vue" },
-          { src: React, alt: "React" },
-          { src: Laravel, alt: "Laravel" },
-          { src: PHP, alt: "PHP" },
-          { src: Figma, alt: "Figma" },
-          { src: Github, alt: "Github" },
-          { src: Gitlab, alt: "Gitlab" },
-          { src: VSCODE, alt: "VSCODE" },
-        ].map((item, index) => (
-          <Slider.Slide key={index}>
-            <img
-              src={item.src}
-              alt={item.alt}
-              className="w-40 md:w-50 grayscale hover:grayscale-0 transition-all ease-in-out"
-            />
-          </Slider.Slide>
-        ))}
-      </Slider>
+      <SliderComponent />
     </div>
   );
 }

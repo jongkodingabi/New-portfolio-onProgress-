@@ -30,6 +30,8 @@ export default function Projects() {
               description={item.description}
               tags={item.tags}
               link={item.link}
+              isLinked={item.isLinked}
+              githubLink={item.github}
               cta={item.cta}
             />
           ))}
