@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   useEffect(() => {
@@ -17,10 +18,12 @@ function App() {
   return (
     <>
       <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
+        <AnimatePresence mode="wait">
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+        </AnimatePresence>
       </Router>
     </>
   );

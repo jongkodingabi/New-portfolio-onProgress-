@@ -6,8 +6,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ProjectsHiglight from "../components/PagesComponent/ProjectsHiglight";
 import Quote from "../components/PagesComponent/Quote";
+import transition from "@/components/Transition";
 
-function App() {
+function Home() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -31,4 +32,4 @@ function App() {
   );
 }
 
-export default App;
+export default transition(Home);

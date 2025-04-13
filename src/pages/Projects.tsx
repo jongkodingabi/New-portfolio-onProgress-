@@ -1,11 +1,12 @@
 import Header from "@/components/Header";
 import Navigation from "@/components/Navigation";
 import MainCard from "@/components/reactbits/MainCard";
+import transition from "@/components/Transition";
 import itemsProjects from "@/ProjectItems";
 
 // Projects data
 
-export default function Projects() {
+function Projects() {
   return (
     <>
       <div className="relative top-0 m-0 bg-black z-0 max-w-full min-h-screen overflow-hidden text-white flex flex-col text-center">
@@ -41,3 +42,5 @@ export default function Projects() {
     </>
   );
 }
+
+export default transition(Projects);
