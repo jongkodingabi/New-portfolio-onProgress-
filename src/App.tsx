@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import "./index.css";
 import AOS from "aos";
@@ -10,22 +10,31 @@ import Projects from "./pages/Projects";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
+  return (
+    <>
+      <Router>
+        <AppContent />
+      </Router>
+    </>
+  );
+}
+
+function AppContent() {
+  const location = useLocation();
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
     });
   });
+
   return (
-    <>
-      <Router>
-        <AnimatePresence mode="wait">
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-          </Routes>
-        </AnimatePresence>
-      </Router>
-    </>
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route index element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+    </AnimatePresence>
   );
 }
 
