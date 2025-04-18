@@ -8,8 +8,10 @@ import Navigation from "../Navigation";
 export function Hero() {
   return (
     <div className="absolute top-0 bg-black w-screen h-[100vh] flex items-center justify-center text-center overflow-x-hidden scrollbar-hidden">
+      {/* Header */}
       <Header className="absolute flex justify-between text-xl left-0 w-full z-20 bg-gradient-to-t from-slate-300 to-gray-500 bg-clip-text text-transparent" />
 
+      {/* Particels Background */}
       <div className="absolute inset-0 z-0">
         <Particles
           particleColors={["#ffffff", "#ffffff"]}
@@ -34,7 +36,6 @@ export function Hero() {
         <p className="pointer-events-none text-center bg-gradient-to-t from-slate-300 to-gray-500 bg-clip-text text-transparent text-xl font-medium leading-none mb-2">
           ABISAM HAZIM
         </p>
-        {/* <h1 className="text-5xl font-bold mb-4">Welcome to Our Website</h1> */}
         <ScrollVelocity
           texts={[
             "FRONTEND DEVELOPER - DREAMER -",
@@ -47,6 +48,8 @@ export function Hero() {
         </p>
         <MainButton title="Take a Journey" />
       </div>
+
+      {/* Dock Nav */}
       <Navigation />
     </div>
   );

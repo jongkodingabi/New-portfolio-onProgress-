@@ -1,11 +1,13 @@
 import TextPressure from "../reactbits/TextPressure";
 import Profile from "@/assets/Profile.png";
-import Resume from "@/assets/resume.svg";
 import SliderComponent from "@/components/reactbits/SliderComponent";
+import Resume from "@/assets/resume.svg";
+import SecondaryButton from "../button/SecondaryButton";
 
 export function About() {
   return (
     <div className="bg-black max-w-screen min-h-screen flex flex-col items-center justify-center text-center mt-[100vh] overflow-x-hidden">
+      {/* Text Pressure Animation */}
       <div className="z-10 flex items-center justify-center w-full">
         <TextPressure
           text="Hello!"
@@ -20,6 +22,8 @@ export function About() {
           className="w-full text-center"
         />
       </div>
+
+      {/* Profil Photo */}
       <div className="p-3">
         <img
           src={Profile}
@@ -33,6 +37,8 @@ export function About() {
           Programmer
         </p>
       </div>
+
+      {/* About Content */}
       <div className="flex justifiy-center">
         <h2
           className="text-md md:text-3xl font-light p-8 md:mx-auto md:p-10 text-center font-mono"
@@ -46,14 +52,9 @@ export function About() {
           I love creating and designing friendly user website.
         </h2>
       </div>
-      <button className="group mb-3 px-4 py-3 rounded-full inline-flex border border-white bg-[##1a1a1a] hover:bg-white hover:text-black transition-all ease-in-out">
-        <img
-          src={Resume}
-          className="w-5 mr-2 group-hover:text-black group-hover:filter group-hover:invert"
-          alt=""
-        />
-        Resume / CV
-      </button>
+      <SecondaryButton title="Resume / CV" image={Resume} />
+
+      {/* Slider Icon */}
       <SliderComponent />
     </div>
   );
