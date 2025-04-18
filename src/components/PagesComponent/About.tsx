@@ -35,7 +35,7 @@ export function About() {
       </div>
       <div className="flex justifiy-center">
         <h2
-          className="text-md md:text-3xl font-light p-8 md:mx-40 md:p-10 text-center font-mono"
+          className="text-md md:text-3xl font-light p-8 md:mx-auto md:p-10 text-center font-mono"
           data-aos="fade-up"
         >
           <span className="font-bold">

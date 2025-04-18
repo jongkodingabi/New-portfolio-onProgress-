@@ -7,12 +7,12 @@ export default function ProjectsHiglight() {
   const navigate = useNavigate();
   const projects = itemsProjects.slice(0, 3);
   return (
-    <div className="bg-black w-screen flex flex-col items-center justify-center text-center">
-      <span className="mx-auto whitespace-nowrap text-center text-[11px] md:text-[47px] font-extrabold text-white opacity-10 uppercase md:mt-20 mt-10">
+    <div className="bg-black w-screen flex flex-col items-center justify-center text-center overflow-x-hidden">
+      {/* <span className="mx-auto whitespace-nowrap text-center hidden sm:hidden lg:text-[40px] font-extrabold text-white opacity-10 uppercase md:mt-20 mt-10">
         <span className="transform-none">
           <h1 className="">PROJECT HIGHLIGHTS</h1>
         </span>
-      </span>
+      </span> */}
 
       <h1 className="text-xs lg:text-3xl font-bold font-impact text-white mt-10 mx-2 lg:mt-20">
         Recent Projects
