@@ -19,7 +19,7 @@ export default function MainCard({
   isLinked,
 }: MainCardProps) {
   return (
-    <div className="group cursor-pointer hover:bg-gradient-to-r from-purple-300 via-yellow-300 to-pink-300 p-1 border border-gray-400 hover:border-0 shadow-2xl transition-all duration-300 ease-in-out hover:transition-all rounded-xl relative mx-2 z-10 mt-10 hover:scale-105 hover:shadow-lg hover:shadow-gray-600 w-full sm:w-80 md:w-96">
+    <div className="group cursor-pointer hover:bg-gradient-to-r from-purple-300 via-yellow-300 to-pink-300 p-1 border border-gray-400 hover:border-0 shadow-2xl transition-all duration-300 ease-in-out hover:transition-all hover:duration-500 hover:ease-in-out rounded-xl relative mx-2 z-10 mt-10 hover:scale-105 hover:shadow-lg hover:shadow-gray-600 w-full sm:w-80 md:w-96">
       <div className="bg-zinc-950 rounded-lg w-full h-full">
         <div className="flex flex-col space-y-2 md:space-y-0">
           <div className="h-full w-full self-stretch flex items-center rounded-t-lg overflow-hidden">
