@@ -6,10 +6,11 @@ import SecondaryButton from "../button/SecondaryButton";
 import Instagram from "@/assets/svg/instagram.svg";
 import Linkedin from "@/assets/svg/linkedin.svg";
 import Github from "@/assets/svg/github.svg";
-import Tailwind from "@/assets/svg/tailwindcss.svg";
-import ReactIcon from "@/assets/svg/react.svg";
-import TypeScript from "@/assets/svg/typescript.svg";
-import Framer from "@/assets/framer-motion2.png";
+// import Tailwind from "@/assets/svg/tailwindcss.svg";
+// import ReactIcon from "@/assets/svg/react.svg";
+// import TypeScript from "@/assets/svg/typescript.svg";
+// import Framer from "@/assets/framer-motion2.png";
+import GitHubCalendar from "react-github-calendar";
 
 export function About() {
   return (
@@ -29,8 +30,8 @@ export function About() {
           className="w-full text-center"
         />
       </div>
-      <div className="max-w-full mx-auto h-full p-6 md:p-14">
-        <div className="grid grid-cols-1 md:grid-cols-5 grid-rows-none md:grid-rows-5 gap-4">
+      <div className="max-w-full mx-auto max-h-full p-6 md:p-14">
+        <div className="grid grid-cols-1 md:grid-cols-5 grid-rows-none md:grid-rows-2 gap-4">
           {/* Profile Picture */}
           <div className="col-span-1 md:col-span-2 md:row-span-5 bg-stone-900 rounded-xl">
             <img
@@ -41,7 +42,7 @@ export function About() {
           </div>
 
           {/* Intro Text */}
-          <div className="col-span-1 md:col-span-3 md:row-span-3 md:col-start-3 bg-gray-600 bg-opacity-5 rounded-2xl p-4 md:p-8">
+          <div className="col-span-1 md:col-span-3 md:row-span-2 md:col-start-3 bg-gray-600 bg-opacity-5 rounded-2xl p-4 md:p-8">
             <p className="text-left text-lg md:text-2xl font-mono">
               <span className="font-extrabold">
                 Hi there! I'm Abisam Hazim — a web developer who’s genuinely
@@ -60,28 +61,19 @@ export function About() {
           </div>
 
           {/* Tech Stack */}
-          <div className="col-span-1 md:col-span-3 md:col-start-3 md:row-start-4 bg-gray-600 rounded-2xl p-4">
-            <div className="text-center mb-4 font-semibold">Made With:</div>
-            <div className="flex md:flex-row justify-center items-center gap-6 md:gap-40">
-              <img src={ReactIcon} className="w-10 md:w-12" alt="React" />
-              <img src={TypeScript} className="w-10 md:w-12" alt="TypeScript" />
-              <img src={Tailwind} className="w-10 md:w-12" alt="Tailwind" />
-              <img
-                src={Framer}
-                className="w-10 md:w-12 filter invert"
-                alt="Framer"
-              />
-            </div>
+          <div className="col-span-1 md:col-span-3 md:col-start-3 md:row-start-3 bg-zinc-900 rounded-2xl p-4">
+            <p className="text-left font-bold mb-2">Github activity:</p>
+            <GitHubCalendar username="jongkodingabi" />
           </div>
 
           {/* Social Icons */}
-          <div className="md:col-start-3 md:row-start-5 bg-pink-600 rounded-2xl flex justify-center items-center transition-all hover:scale-105 duration-300 hover:rotate-3">
+          <div className="md:col-start-3 md:row-start-4 bg-pink-600 rounded-2xl flex justify-center items-center transition-all hover:scale-105 duration-300 hover:rotate-3">
             <img src={Instagram} className="w-10 md:w-14 p-2" alt="Instagram" />
           </div>
-          <div className="md:col-start-4 md:row-start-5 bg-blue-600 rounded-2xl flex justify-center items-center transition-all hover:scale-105 duration-300 hover:rotate-3">
+          <div className="md:col-start-4 md:row-start-4 bg-blue-600 rounded-2xl flex justify-center items-center transition-all hover:scale-105 duration-300 hover:rotate-3">
             <img src={Linkedin} className="w-10 md:w-14 p-2" alt="Linkedin" />
           </div>
-          <div className="md:col-start-5 md:row-start-5 bg-zinc-800 rounded-2xl flex justify-center items-center transition-all hover:scale-105 duration-300 hover:rotate-3">
+          <div className="md:col-start-5 md:row-start-4 bg-zinc-800 rounded-2xl flex justify-center items-center transition-all hover:scale-105 duration-300 hover:rotate-3">
             <img src={Github} className="w-10 md:w-14 p-2" alt="Github" />
           </div>
         </div>

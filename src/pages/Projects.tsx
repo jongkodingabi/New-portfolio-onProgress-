@@ -14,7 +14,7 @@ function Projects() {
   return (
     <>
       <div className="relative top-0 m-0 bg-black z-0 max-w-full min-h-screen overflow-hidden text-white flex flex-col text-center">
-        <div className="relative flex size-full items-center justify-center overflow-hidden rounded-lg bg-background p-20">
+        <div className="md:size-full items-center justify-center overflow-hidden rounded-lg bg-background">
           <GridPattern
             width={50}
             height={50}
