@@ -42,7 +42,10 @@ export function About() {
           </div>
 
           {/* Intro Text */}
-          <div className="col-span-1 md:col-span-3 md:row-span-2 md:col-start-3 bg-gray-600 bg-opacity-5 rounded-2xl p-4 md:p-8">
+          <div
+            className="col-span-1 md:col-span-3 md:row-span-2 md:col-start-3 bg-zinc-900 rounded-2xl p-4 md:p-8"
+            style={{ opacity: 1, transform: "none" }}
+          >
             <p className="text-left text-lg md:text-2xl font-mono">
               <span className="font-extrabold">
                 Hi there! I'm Abisam Hazim — a web developer who’s genuinely
