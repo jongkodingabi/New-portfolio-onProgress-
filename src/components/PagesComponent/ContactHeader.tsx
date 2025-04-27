@@ -2,9 +2,9 @@ export default function Quote() {
   return (
     <div className="bg-black w-screen flex flex-col items-center justify-center text-center">
       {/* title */}
-      <span className="mx-auto flex items-center justify-center z-0 absolute whitespace-nowrap text-center tracking-tighter text-4xl md:text-7xl lg:text-[150px] font-extrabold text-white opacity-10 uppercase lg:mt-10 mt-2">
+      <span className="mx-auto flex items-center justify-center z-0 absolute whitespace-nowrap text-center tracking-tighter text-4xl md:text-7xl lg:text-[100px] font-extrabold text-white opacity-10 uppercase lg:mt-30 mt-2">
         <span className="">
-          <h1 className="">QUOTE</h1>
+          <h1 className="">CONTACT</h1>
         </span>
       </span>
 
@@ -27,8 +27,7 @@ export default function Quote() {
           className="text-2xl md:text-6xl mx-8 md:mx-20 lg:mx-60 lg:text-7xl tracking-tighter font-extrabold font-impact text-white text-center"
           data-aos="fade-up"
         >
-          Good code is like a good joke—clear, simple, and makes everyone nod in
-          agreement.
+          I'D LOVE TO HEAR FROM YOU
         </h3>
 
         {/* Author */}

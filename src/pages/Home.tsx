@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import ProjectsHiglight from "../components/PagesComponent/ProjectsHiglight";
 import Quote from "../components/PagesComponent/Quote";
 import transition from "@/components/Transition";
+import ContactHeader from "@/components/PagesComponent/ContactHeader";
 
 function Home() {
   useEffect(() => {
@@ -27,6 +28,9 @@ function Home() {
       </section>
       <section className="overflow-hidden" id="#Quote">
         <Quote />
+      </section>
+      <section className="overflow-hidden" id="#ContactHeader">
+        <ContactHeader />
       </section>
     </>
   );
