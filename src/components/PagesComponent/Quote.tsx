@@ -1,14 +1,14 @@
 export default function Quote() {
   return (
-    <div className="bg-black w-screen flex flex-col items-center justify-center text-center">
+    <div className="bg-black max-w-full flex flex-col items-center justify-center text-center">
       {/* title */}
-      <span className="mx-auto flex items-center justify-center z-0 absolute whitespace-nowrap text-center tracking-tighter text-4xl md:text-7xl lg:text-[150px] font-extrabold text-white opacity-10 uppercase lg:mt-10 mt-2">
-        <span className="">
+      <span className="mx-auto flex items-center justify-center z-0 absolute whitespace-nowrap text-center tracking-tighter text-2xl sm:text-4xl md:text-7xl lg:text-[140px] max-w-[140px] font-extrabold text-white opacity-10 uppercase lg:mt-10 mt-2">
+        <span>
           <h1 className="">QUOTE</h1>
         </span>
       </span>
 
-      <div className="py-7 lg:mt-40 mt-20" data-aos="fade-up">
+      <div className="py-7 lg:mt-70 mt-20" data-aos="fade-up">
         {/* Quote Icon */}
         <svg
           xmlns="http://www.w3.org/2000/svg"

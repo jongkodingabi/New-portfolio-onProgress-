@@ -8,8 +8,7 @@ import "aos/dist/aos.css";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import { AnimatePresence } from "framer-motion";
-import myLogo from "@/assets/myLogo.png";
-
+import BlurText from "./components/reactbits/BlurText";
 function App() {
   return (
     <>
@@ -40,9 +39,17 @@ function AppContent() {
   return (
     <>
       {loading ? (
-        <div className="relative flex justify-center items-center w-screen">
-          <div className="absolute animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-white"></div>
-          <img src={myLogo} className="rounded-full w-30 animate-caret-blink" />
+        <div className="relative flex flex-col justify-center items-center w-screen">
+          <BlurText
+            text="Hello There, 👋!"
+            delay={150}
+            animateBy="words"
+            direction="top"
+            className="text-2xl md:text-5xl xl:text-7xl font-bold mb-8"
+          />
+          <div className="bg-white h-1 w-50 md:w-80 lg:w-100 xl:w-120 rounded-full animate-pulse">
+            {/* underline border */}
+          </div>
         </div>
       ) : (
         <AnimatePresence mode="wait">

@@ -8,6 +8,7 @@ import ProjectsHiglight from "../components/PagesComponent/ProjectsHiglight";
 import Quote from "../components/PagesComponent/Quote";
 import transition from "@/components/Transition";
 import ContactHeader from "@/components/PagesComponent/ContactHeader";
+import ContactSection from "@/components/PagesComponent/ContactSection";
 
 function Home() {
   useEffect(() => {
@@ -31,6 +32,9 @@ function Home() {
       </section>
       <section className="overflow-hidden" id="#ContactHeader">
         <ContactHeader />
+      </section>
+      <section className="overflow-hidden" id="#ContactHeader">
+        <ContactSection />
       </section>
     </>
   );

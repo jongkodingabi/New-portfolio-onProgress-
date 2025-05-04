@@ -1,5 +1,5 @@
 import TextPressure from "../reactbits/TextPressure";
-import Profile from "@/assets/Profile.png";
+import Profile from "@/assets/png/me.jpg";
 import SliderComponent from "@/components/reactbits/SliderComponent";
 import Resume from "@/assets/resume.svg";
 import SecondaryButton from "../button/SecondaryButton";

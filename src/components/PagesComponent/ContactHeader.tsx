@@ -9,7 +9,7 @@ export default function Quote() {
       </span>
 
       <div className="py-7 lg:mt-80 mt-25" data-aos="fade-up">
-        {/* Qoute */}
+        {/* Title */}
         <h3
           className="text-2xl md:text-6xl mx-8 md:mx-20 lg:mx-60 lg:text-7xl tracking-tighter font-extrabold font-impact text-white text-center"
           data-aos="fade-up"
@@ -23,7 +23,7 @@ export default function Quote() {
           CONTACT ME
         </h3>
 
-        {/* Author */}
+        {/* Text */}
         <p className="text-xs md:text-2xl font-bold text-gray-400 mt-4 mx-4 md:mx-40">
           Let's turn ideas into reality! If you have a project in mind, need
           assistance, or simply want to start a conversation, feel free to drop
