@@ -31,21 +31,18 @@ export function About() {
         />
       </div>
       <div className="max-w-full mx-auto max-h-full p-6 md:p-14">
-        <div className="grid grid-cols-1 md:grid-cols-5 grid-rows-none md:grid-rows-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-5 grid-rows-none md:grid-rows-1 gap-4">
           {/* Profile Picture */}
-          <div className="col-span-1 md:col-span-2 md:row-span-5 bg-stone-900 rounded-xl">
+          <div className="col-span-1 md:col-span-2 md:row-span-3 bg-stone-900 rounded-xl">
             <img
               src={Profile}
-              alt=""
+              alt="myPhoto"
               className="object-cover w-full h-full rounded-2xl"
             />
           </div>
 
           {/* Intro Text */}
-          <div
-            className="col-span-1 md:col-span-3 md:row-span-2 md:col-start-3 bg-zinc-900 rounded-2xl p-4 md:p-8"
-            style={{ opacity: 1, transform: "none" }}
-          >
+          <div className="col-span-1 md:col-span-3 md:row-span-1 md:col-start-3 bg-zinc-900 rounded-2xl p-4 md:p-8">
             <p className="text-left text-lg md:text-2xl font-mono">
               <span className="font-extrabold">
                 Hi there! I'm Abisam Hazim — a web developer who’s genuinely
@@ -55,6 +52,8 @@ export function About() {
               I love diving into both front-end and back-end development because
               I believe great digital experiences are built when both sides work
               in harmony.
+              <span className="hidden md:block"></span>I believe great digital
+              experiences are built when both sides work in harmony.
               <span className="hidden md:block">
                 I mostly work with modern frameworks like Laravel, React, and
                 Tailwind CSS. These tools help me create clean, responsive, and
@@ -64,19 +63,19 @@ export function About() {
           </div>
 
           {/* Tech Stack */}
-          <div className="col-span-1 md:col-span-3 md:col-start-3 md:row-start-3 bg-zinc-900 rounded-2xl p-4">
+          <div className="col-span-1 md:col-span-3 md:col-start-3 md:row-start-2 bg-zinc-900 rounded-2xl p-4">
             <p className="text-left font-bold mb-2">Github activity:</p>
             <GitHubCalendar username="jongkodingabi" />
           </div>
 
           {/* Social Icons */}
-          <div className="md:col-start-3 md:row-start-4 bg-pink-600 rounded-2xl flex justify-center items-center transition-all hover:scale-105 duration-300 hover:rotate-3">
+          <div className="md:col-start-3 md:row-start-3 bg-pink-600 rounded-2xl flex justify-center items-center transition-all hover:scale-105 duration-300 hover:rotate-3">
             <img src={Instagram} className="w-10 md:w-14 p-2" alt="Instagram" />
           </div>
-          <div className="md:col-start-4 md:row-start-4 bg-blue-600 rounded-2xl flex justify-center items-center transition-all hover:scale-105 duration-300 hover:rotate-3">
+          <div className="md:col-start-4 md:row-start-3 bg-blue-600 rounded-2xl flex justify-center items-center transition-all hover:scale-105 duration-300 hover:rotate-3">
             <img src={Linkedin} className="w-10 md:w-14 p-2" alt="Linkedin" />
           </div>
-          <div className="md:col-start-5 md:row-start-4 bg-zinc-800 rounded-2xl flex justify-center items-center transition-all hover:scale-105 duration-300 hover:rotate-3">
+          <div className="md:col-start-5 md:row-start-3 bg-zinc-800 rounded-2xl flex justify-center items-center transition-all hover:scale-105 duration-300 hover:rotate-3">
             <img src={Github} className="w-10 md:w-14 p-2" alt="Github" />
           </div>
         </div>
