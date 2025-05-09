@@ -51,9 +51,8 @@ export function About() {
               </span>{" "}
               I love diving into both front-end and back-end development because
               I believe great digital experiences are built when both sides work
-              in harmony.
-              <span className="hidden md:block"></span>I believe great digital
-              experiences are built when both sides work in harmony.
+              in harmony. I believe great digital experiences are built when
+              both sides work in harmony.
               <span className="hidden md:block">
                 I mostly work with modern frameworks like Laravel, React, and
                 Tailwind CSS. These tools help me create clean, responsive, and

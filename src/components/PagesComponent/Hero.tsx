@@ -1,7 +1,7 @@
 import Particles from "../reactbits/Particles";
 import ScrollVelocity from "@/components/reactbits/ScrollVelocity";
 import Logo from "@/assets/myLogo.png";
-import MainButton from "@/components/button/MainButton";
+// import MainButton from "@/components/button/MainButton";
 import Header from "@/components/Header";
 import Navigation from "../Navigation";
 
@@ -46,7 +46,25 @@ export function Hero() {
         <p className="p-5 mx-4 text-sm md:text-lg text-center font-semibold">
           "Elevating Digital Experiences with Passion & Precision."
         </p>
-        <MainButton title="Take a Journey" />
+        {/* <MainButton title="Take a Journey" /> */}
+        <div className="p-4">
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollBy({
+                top: window.innerHeight / 2,
+                behavior: "smooth",
+              });
+            }}
+          >
+            <span className="scroll-btn">
+              <span className="mouse">
+                <span></span>
+              </span>
+            </span>
+          </a>
+        </div>
       </div>
 
       {/* Dock Nav */}
