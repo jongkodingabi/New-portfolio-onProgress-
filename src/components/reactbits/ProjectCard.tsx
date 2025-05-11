@@ -8,6 +8,7 @@ type CardsProps = {
   link: string;
   githubLink: string;
   isLinked: boolean;
+  tags?: string[];
 };
 export default function ProjectsCards({
   title,
@@ -15,6 +16,7 @@ export default function ProjectsCards({
   imageUrl,
   link,
   githubLink,
+  tags,
   isLinked,
 }: CardsProps) {
   return (
@@ -36,6 +38,18 @@ export default function ProjectsCards({
           <p className="text-sm md:text-lg font-light text-gray-300 opacity-45 group-hover:opacity-100 mt-2 text-left">
             {description}
           </p>
+          <div className="flex flex-wrap mt-4 gap-2">
+            {tags?.map((tag, index) => (
+              <div className="">
+                <span
+                  key={index}
+                  className="cursor-default px-4 py-1 rounded-full bg-transparent hover:bg-gray-600 transition-all duration-300 border border-white text-xs md:text-sm font-semibold text-gray-300"
+                >
+                  {tag}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <div className="absolute rounded-xl bottom-0 left-0 w-0 h-1 bg-white group-hover:w-full transition-all duration-300"></div>

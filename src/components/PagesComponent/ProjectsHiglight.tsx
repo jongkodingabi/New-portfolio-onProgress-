@@ -28,6 +28,7 @@ export default function ProjectsHiglight() {
             githubLink={project.github}
             cta={project.cta}
             isLinked={project.isLinked}
+            tags={project.tags}
           />
         ))}
       </div>
