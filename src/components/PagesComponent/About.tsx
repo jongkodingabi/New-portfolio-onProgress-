@@ -6,10 +6,6 @@ import SecondaryButton from "../button/SecondaryButton";
 import Instagram from "@/assets/svg/instagram.svg";
 import Linkedin from "@/assets/svg/linkedin.svg";
 import Github from "@/assets/svg/github.svg";
-// import Tailwind from "@/assets/svg/tailwindcss.svg";
-// import ReactIcon from "@/assets/svg/react.svg";
-// import TypeScript from "@/assets/svg/typescript.svg";
-// import Framer from "@/assets/framer-motion2.png";
 import GitHubCalendar from "react-github-calendar";
 
 export function About() {
