@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import { AnimatePresence } from "framer-motion";
 import BlurText from "./components/reactbits/BlurText";
+import gsap from "gsap";
 function App() {
   return (
     <>
@@ -35,6 +36,16 @@ function AppContent() {
       duration: 1000,
     });
   });
+
+  useEffect(() => {
+    gsap.from(".fade-left", {
+      x: -100,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.2,
+      ease: "power2.out",
+    });
+  }, []);
 
   return (
     <>

@@ -9,6 +9,7 @@ import Quote from "../components/PagesComponent/Quote";
 import transition from "@/components/Transition";
 import ContactHeader from "@/components/PagesComponent/ContactHeader";
 import ContactSection from "@/components/PagesComponent/ContactSection";
+import Footer from "@/components/PagesComponent/Footer";
 
 function Home() {
   useEffect(() => {
@@ -35,6 +36,9 @@ function Home() {
       </section>
       <section className="overflow-hidden" id="#ContactHeader">
         <ContactSection />
+      </section>
+      <section className="overflow-hidden" id="#ContactHeader">
+        <Footer />
       </section>
     </>
   );
