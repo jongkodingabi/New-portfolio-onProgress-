@@ -23,11 +23,11 @@ const FadeLeftOnScroll: React.FC<FadeLeftOnScrollProps> = ({
 
     gsap.fromTo(
       el,
-      { x: -150, opacity: 0 },
+      { x: -100, opacity: 0 },
       {
         x: 0,
         opacity: 1,
-        duration: 3,
+        duration: 2,
         delay,
         ease: "power2.out",
         scrollTrigger: {
@@ -39,7 +39,11 @@ const FadeLeftOnScroll: React.FC<FadeLeftOnScrollProps> = ({
     );
   }, [delay]);
 
-  return <div ref={elementRef}>{children}</div>;
+  return (
+    <div className="overflow-x-hidden-" ref={elementRef}>
+      {children}
+    </div>
+  );
 };
 
 export default FadeLeftOnScroll;

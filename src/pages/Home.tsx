@@ -34,10 +34,10 @@ function Home() {
       <section className="overflow-hidden" id="#ContactHeader">
         <ContactHeader />
       </section>
-      <section className="overflow-hidden" id="#ContactHeader">
+      <section className="overflow-hidden" id="#ContactSection">
         <ContactSection />
       </section>
-      <section className="overflow-hidden" id="#ContactHeader">
+      <section className="overflow-hidden" id="#Footer">
         <Footer />
       </section>
     </>
