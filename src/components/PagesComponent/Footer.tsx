@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className="flex flex-col items-center justify-center py-4 pb-23">
-        <div className="border-t w-100 lg:w-350 border-gray-600 flex items-center justify-center"></div>
+        <div className="border-t w-70 md:w-100 lg:w-350 border-gray-600 flex items-center justify-center"></div>
         <p className="text-xs text-gray-400 font-medium pt-2">
           © 2025 Abisam Hazim. All rights deserved
         </p>
