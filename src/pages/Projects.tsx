@@ -1,19 +1,73 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { useState, useEffect } from "react";
 import { GridPattern } from "@/components/reactbits/GridPattern";
 import Header from "@/components/Header";
 import Navigation from "@/components/Navigation";
 import MainCard from "@/components/reactbits/MainCard";
 import transition from "@/components/Transition";
 import itemsProjects from "@/ProjectItems";
+import close from "../assets/svg/circle-close.svg";
+import { AnimatePresence, motion } from "framer-motion";
 
 // Projects data
 
 function Projects() {
+  // Start Filters
+  const [selectedFilters, setSelectedFilters] = useState<any[]>([]);
+  const [filteredItems, setFilteredItems] = useState(itemsProjects);
+  interface SelectedItem {
+    image: string;
+    title: string;
+    description: string;
+    tags: string[];
+    [key: string]: any;
+  }
+
+  const [selectedItem, setSelectedItem] = useState<SelectedItem | null>(null);
+  const [modal, setModal] = useState(false);
+  let filters = ["All", "Frontend", "Backend", "Mobile"];
+
+  const handleFilterButtonClick = (selectedCategory: string) => {
+    if (selectedCategory == "All") {
+      setSelectedFilters([]);
+    } else {
+      setSelectedFilters([selectedCategory]);
+    }
+  };
+
+  useEffect(() => {
+    filterItems();
+  }, [selectedFilters]);
+
+  const filterItems = () => {
+    if (selectedFilters.length > 0) {
+      let tempItems = selectedFilters.map((selectedCategory) => {
+        let temp = itemsProjects.filter(
+          (item) => item.category === selectedCategory
+        );
+        return temp;
+      });
+      setFilteredItems(tempItems.flat());
+    }
+    if (selectedFilters.length === 0) {
+      // Tampilkan semua item jika tidak ada filter aktif (All)
+      setFilteredItems([...itemsProjects]);
+    }
+  };
+  // End Filters
+
+  // Pop Up Modal
+  const toggleModal = (item: any) => {
+    setSelectedItem(item);
+    setModal(!modal);
+    console.log("Modal dibuka");
+  };
+
   return (
     <>
-      <div className="relative top-0 m-0 bg-black z-0 max-w-full min-h-screen overflow-hidden text-white flex flex-col text-center">
+      <div className="relative top-0 m-0 bg-black z-0 max-w-s min-h-screen overflow-hidden text-white flex flex-col text-center">
         <div className="md:size-full items-center justify-center overflow-hidden rounded-lg bg-background">
           <GridPattern
             width={50}
@@ -35,9 +89,20 @@ function Projects() {
             </h1>
           </div>
 
+          <div className="flex justify-center items-center relative top-40 z-10 gap-4">
+            {filters.map((category, idx) => (
+              <button
+                onClick={() => handleFilterButtonClick(category)}
+                key={`filters-${idx}`}
+                className="px-4 py-1 rounded-full bg-transparent hover:bg-gray-600 transition-all duration-300 border border-white text-xs md:text-sm font-semibold text-gray-300"
+              >
+                {category}
+              </button>
+            ))}
+          </div>
           {/* Cards Display */}
-          <div className="flex flex-col sm:flex-row mx-4 md:flex-wrap justify-center items-center mt-40 sm:mt-80 md:mt-40 z-10 gap-6">
-            {itemsProjects.map((item) => (
+          <div className="w-screen grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center px-6 md:px-18 mt-40 z-10">
+            {filteredItems.map((item) => (
               <MainCard
                 key={item.id}
                 img={item.image}
@@ -48,12 +113,82 @@ function Projects() {
                 isLinked={item.isLinked}
                 githubLink={item.github}
                 cta={item.cta}
+                onClick={() => toggleModal(item)}
+                category={item.category}
               />
             ))}
           </div>
           <Navigation />
         </div>
       </div>
+      {modal && selectedItem !== null && (
+        <AnimatePresence>
+          <motion.div
+            className="fixed inset-0 z-[9999] bg-black/60 flex items-center justify-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setModal(false)}
+          >
+            <div
+              className="fixed inset-0 z-[9999] bg-black/60 flex items-center justify-center"
+              onClick={() => setModal(false)}
+            >
+              <div className="bg-transparent bg-opacity-70 border border-white backdrop-blur-2xl rounded-xl w-[90%] max-w-xl shadow-lg">
+                <div className="h-full w-full self-stretch flex items-center rounded-t-xl overflow-hidden p-0 m-0 relative">
+                  <button
+                    onClick={() => setModal(false)}
+                    className="absolute top-2 left-2 z-10 bg-black/50 p-2 rounded-full hover:bg-black/70 transition-all"
+                  >
+                    <img
+                      src={close}
+                      alt="close icon"
+                      className="w-6 h-6 cursor-pointer"
+                    />
+                  </button>
+                  <img
+                    src={selectedItem.image}
+                    alt="Project Image"
+                    className="h-full w-full object-cover group-hover:scale-110 group-hover:rotate-2 transition-transform duration-300 "
+                  />
+                </div>
+                <div className="flex flex-col space-y-2 md:space-y-0">
+                  <div className=""></div>
+                  <div className="p-4 md:p-4 mt-2 space-y-2">
+                    <h1 className="text-sm md:text-lg lg:text-lg font-bold text-white transition-all ease-in-out text-left mb-5">
+                      {selectedItem.title}
+                    </h1>
+                    <p className="text-xs md:text-base font-semibold text-gray-300 mt-1 text-left">
+                      {selectedItem.description}
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap pl-4 mb-4 gap-2">
+                    {selectedItem.tags.map((tag, index) => (
+                      <span
+                        key={index}
+                        className="cursor-default px-4 py-1 rounded-full bg-transparent hover:bg-gray-600 transition-all duration-300 border border-white text-xs md:text-sm font-semibold text-gray-300"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="flex flex-row p-2 mb-4">
+                    <button className="cursor-pointer w-full sm:w-auto px-4 py-1 text-lg font-bold bg-white rounded-full text-black hover:bg-gray-200 transition-all duration-300 border border-white">
+                      Lets go
+                    </button>
+
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <button className="cursor-pointer w-full sm:w-auto px-4 py-1 text-lg font-bold bg-white rounded-full text-black hover:bg-gray-200 transition-all duration-300 border border-white">
+                        Lets go
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </AnimatePresence>
+      )}
     </>
   );
 }

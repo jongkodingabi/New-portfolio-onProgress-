@@ -3,6 +3,7 @@ import BeedeGo from "@/assets/projects/beedego.png";
 import KataKita from "@/assets/projects/kataKita.png";
 import Caseths from "@/assets/projects/caseth-la-magasin_web.jpg";
 import TodoApp from "@/assets/projects/To-Do List App.png";
+import Equran from "@/assets/projects/e-quran-project.png";
 
 const itemsProjects = [
   {
@@ -16,9 +17,23 @@ const itemsProjects = [
     github: "https://github.com/jongkodingabi/Meals-App",
     cta: "View site",
     isLinked: true,
+    category: "Frontend",
   },
   {
     id: 2,
+    image: Equran,
+    title: "E-Quran web",
+    description:
+      "E-Quran Web is an online platform that allows users to read, search, and listen to the Quran.",
+    tags: ["React", "Typescript", "E-quran API"],
+    link: "https://e-qur-an-web.vercel.app/",
+    github: "https://github.com/jongkodingabi/E-Qur-an",
+    cta: "View site",
+    isLinked: true,
+    category: "Frontend",
+  },
+  {
+    id: 3,
     image: BeedeGo,
     title: "BeedeGo",
     description:
@@ -28,9 +43,10 @@ const itemsProjects = [
     github: "https://github.com/jongkodingabi/BeeDeGo",
     cta: "View site",
     isLinked: true,
+    category: "Frontend",
   },
   {
-    id: 3,
+    id: 4,
     image: KataKita,
     title: "KataKita",
     description:
@@ -40,21 +56,23 @@ const itemsProjects = [
     github: "https://github.com/jongkodingabi/KataKita",
     cta: "View github",
     isLinked: false,
+    category: "Mobile",
   },
   {
-    id: 4,
+    id: 5,
     image: Caseths,
     title: "Caseths",
     description:
-      "Website that contains product information in the form of accessories, and payment gatheway",
+      "Website that contains product information in the form of accessories, payment gatheway",
     tags: ["Laravel", "Tailwind CSS", "MySQL"],
     link: "#",
     github: "https://github.com/jongkodingabi/KataKita",
     cta: "View github",
     isLinked: false,
+    category: "Backend",
   },
   {
-    id: 5,
+    id: 6,
     image: TodoApp,
     title: "To-Do App",
     description:
@@ -64,6 +82,7 @@ const itemsProjects = [
     github: "https://github.com/jongkodingabi/TODO-List-App",
     cta: "View github",
     isLinked: true,
+    category: "Frontend",
   },
 ];
 
