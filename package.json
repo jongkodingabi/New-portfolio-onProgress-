@@ -15,7 +15,6 @@
     "@react-three/fiber": "^9.1.2",
     "@react-three/rapier": "^2.1.0",
     "@tailwindcss/vite": "^4.0.15",
-    "aos": "^2.3.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "deps": "^1.0.0",

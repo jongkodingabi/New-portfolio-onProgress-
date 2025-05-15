@@ -3,7 +3,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import "./index.css";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -30,12 +29,6 @@ function AppContent() {
       setLoading(false);
     }, 2000);
   }, []);
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  });
 
   useEffect(() => {
     gsap.from(".fade-left", {

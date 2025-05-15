@@ -11,10 +11,9 @@ import itemsProjects from "@/ProjectItems";
 import close from "../assets/svg/circle-close.svg";
 import { AnimatePresence, motion } from "framer-motion";
 
-// Projects data
-
 function Projects() {
   // Start Filters
+
   const [selectedFilters, setSelectedFilters] = useState<any[]>([]);
   const [filteredItems, setFilteredItems] = useState(itemsProjects);
   interface SelectedItem {
