@@ -64,19 +64,39 @@ export function About() {
           </div>
 
           {/* Social Icons */}
-          <div className="md:col-start-3 md:row-start-3 bg-pink-600 rounded-2xl flex justify-center items-center transition-all hover:scale-105 duration-300 hover:rotate-3">
-            <img src={Instagram} className="w-10 md:w-14 p-2" alt="Instagram" />
-          </div>
-          <div className="md:col-start-4 md:row-start-3 bg-blue-600 rounded-2xl flex justify-center items-center transition-all hover:scale-105 duration-300 hover:rotate-3">
-            <img src={Linkedin} className="w-10 md:w-14 p-2" alt="Linkedin" />
-          </div>
-          <div className="md:col-start-5 md:row-start-3 bg-zinc-800 rounded-2xl flex justify-center items-center transition-all hover:scale-105 duration-300 hover:rotate-3">
-            <img src={Github} className="w-10 md:w-14 p-2" alt="Github" />
-          </div>
+          <a href="https://www.instagram.com/biscuitsam__" target="__blank">
+            <div className="md:col-start-3 md:row-start-3 bg-pink-600 rounded-2xl flex justify-center items-center transition-all hover:scale-105 duration-300 hover:rotate-3">
+              <img
+                src={Instagram}
+                className="w-10 md:w-14 p-2"
+                alt="Instagram"
+              />
+            </div>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/abisam-hazim-5853b4345"
+            target="__blank"
+          >
+            <div className="md:col-start-4 md:row-start-3 bg-blue-600 rounded-2xl flex justify-center items-center transition-all hover:scale-105 duration-300 hover:rotate-3">
+              <img src={Linkedin} className="w-10 md:w-14 p-2" alt="Linkedin" />
+            </div>
+          </a>
+
+          <a href="https://github.com/jongkodingabi" target="__blank">
+            <div className="md:col-start-5 md:row-start-3 bg-zinc-800 rounded-2xl flex justify-center items-center transition-all hover:scale-105 duration-300 hover:rotate-3">
+              <img src={Github} className="w-10 md:w-14 p-2" alt="Github" />
+            </div>
+          </a>
         </div>
       </div>
-
-      <SecondaryButton title="Resume / CV" image={Resume} />
+      <a
+        href="/assets/Pdf/CV-ABISAM-HAZIM.pdf"
+        download="CV-ABISAM-HAZIM"
+        className="cursor-pointer"
+      >
+        <SecondaryButton title="Resume / CV" image={Resume} />
+      </a>
 
       {/* Slider Icon */}
       <SliderComponent />
