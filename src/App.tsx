@@ -3,7 +3,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import "./index.css";
-import "aos/dist/aos.css";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import { AnimatePresence } from "framer-motion";

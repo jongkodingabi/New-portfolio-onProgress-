@@ -4,6 +4,8 @@ import KataKita from "@/assets/projects/kataKita.png";
 import Caseths from "@/assets/projects/caseth-la-magasin_web.jpg";
 import TodoApp from "@/assets/projects/To-Do List App.png";
 import Equran from "@/assets/projects/e-quran-project.png";
+import BangbaraPOS from "@/assets/projects/BangbaraPos-project.jpg";
+import BlogApp from "@/assets/projects/blog-app.jpg";
 
 const itemsProjects = [
   {
@@ -83,6 +85,32 @@ const itemsProjects = [
     cta: "View github",
     isLinked: true,
     category: "Frontend",
+  },
+  {
+    id: 7,
+    image: BangbaraPOS,
+    title: "BangbaraPOS",
+    description:
+      "A project that I worked on with my team to create an ordering system for UMKM",
+    tags: ["Laravel", "TailwindCSS", "Midtrans"],
+    link: "#",
+    github: "https://github.com/fallennsyahid/bangbaraPOS",
+    cta: "View github",
+    isLinked: false,
+    category: "Backend",
+  },
+  {
+    id: 8,
+    image: BlogApp,
+    title: "Blogs App",
+    description:
+      "A website created using Laravel, which contains a collection of blogs, also has search and pagination",
+    tags: ["Laravel", "TailwindCSS"],
+    link: "#",
+    github: "https://github.com/jongkodingabi/Blog-Web-damy-",
+    cta: "View github",
+    isLinked: false,
+    category: "Backend",
   },
 ];
 

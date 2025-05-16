@@ -8,12 +8,13 @@ import Navigation from "@/components/Navigation";
 import MainCard from "@/components/reactbits/MainCard";
 import transition from "@/components/Transition";
 import itemsProjects from "@/ProjectItems";
-import close from "../assets/svg/circle-close.svg";
-import { AnimatePresence, motion } from "framer-motion";
+
+import PopUpModals from "@/components/Modals/PopUpModals";
 
 function Projects() {
   // Start Filters
 
+  // Active button
   const [selectedFilters, setSelectedFilters] = useState<any[]>([]);
   const [filteredItems, setFilteredItems] = useState(itemsProjects);
   interface SelectedItem {
@@ -74,7 +75,7 @@ function Projects() {
             x={-1}
             y={-1}
             className={cn(
-              "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] "
+              "fixed [mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] "
             )}
           />
           <Header className="fixed flex justify-between text-xl left-0 w-full z-20 text-white" />
@@ -89,16 +90,28 @@ function Projects() {
           </div>
 
           <div className="flex justify-center items-center relative top-40 z-10 gap-4">
-            {filters.map((category, idx) => (
-              <button
-                onClick={() => handleFilterButtonClick(category)}
-                key={`filters-${idx}`}
-                className="px-4 py-1 rounded-full bg-transparent hover:bg-gray-600 transition-all duration-300 border border-white text-xs md:text-sm font-semibold text-gray-300"
-              >
-                {category}
-              </button>
-            ))}
+            {filters.map((category, idx) => {
+              const isActive =
+                (category === "All" && selectedFilters.length === 0) ||
+                selectedFilters.includes(category);
+
+              return (
+                <button
+                  onClick={() => handleFilterButtonClick(category)}
+                  key={`filters-${idx}`}
+                  className={cn(
+                    "px-4 py-1 rounded-full transition-all duration-300 border text-xs md:text-sm font-semibold",
+                    isActive
+                      ? "bg-white text-black border-white"
+                      : "bg-transparent text-gray-300 border-white hover:bg-gray-600"
+                  )}
+                >
+                  {category}
+                </button>
+              );
+            })}
           </div>
+
           {/* Cards Display */}
           <div className="w-screen grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center px-6 md:px-18 mt-40 z-10">
             {filteredItems.map((item) => (
@@ -120,73 +133,16 @@ function Projects() {
           <Navigation />
         </div>
       </div>
-      {modal && selectedItem !== null && (
-        <AnimatePresence>
-          <motion.div
-            className="fixed inset-0 z-[9999] bg-black/60 flex items-center justify-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setModal(false)}
-          >
-            <div
-              className="fixed inset-0 z-[9999] bg-black/60 flex items-center justify-center"
-              onClick={() => setModal(false)}
-            >
-              <div className="bg-transparent bg-opacity-70 border border-white backdrop-blur-2xl rounded-xl w-[90%] max-w-xl shadow-lg">
-                <div className="h-full w-full self-stretch flex items-center rounded-t-xl overflow-hidden p-0 m-0 relative">
-                  <button
-                    onClick={() => setModal(false)}
-                    className="absolute top-2 left-2 z-10 bg-black/50 p-2 rounded-full hover:bg-black/70 transition-all"
-                  >
-                    <img
-                      src={close}
-                      alt="close icon"
-                      className="w-6 h-6 cursor-pointer"
-                    />
-                  </button>
-                  <img
-                    src={selectedItem.image}
-                    alt="Project Image"
-                    className="h-full w-full object-cover group-hover:scale-110 group-hover:rotate-2 transition-transform duration-300 "
-                  />
-                </div>
-                <div className="flex flex-col space-y-2 md:space-y-0">
-                  <div className=""></div>
-                  <div className="p-4 md:p-4 mt-2 space-y-2">
-                    <h1 className="text-sm md:text-lg lg:text-lg font-bold text-white transition-all ease-in-out text-left mb-5">
-                      {selectedItem.title}
-                    </h1>
-                    <p className="text-xs md:text-base font-semibold text-gray-300 mt-1 text-left">
-                      {selectedItem.description}
-                    </p>
-                  </div>
-                  <div className="flex flex-wrap pl-4 mb-4 gap-2">
-                    {selectedItem.tags.map((tag, index) => (
-                      <span
-                        key={index}
-                        className="cursor-default px-4 py-1 rounded-full bg-transparent hover:bg-gray-600 transition-all duration-300 border border-white text-xs md:text-sm font-semibold text-gray-300"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="flex flex-row p-2 mb-4">
-                    <button className="cursor-pointer w-full sm:w-auto px-4 py-1 text-lg font-bold bg-white rounded-full text-black hover:bg-gray-200 transition-all duration-300 border border-white">
-                      Lets go
-                    </button>
 
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                      <button className="cursor-pointer w-full sm:w-auto px-4 py-1 text-lg font-bold bg-white rounded-full text-black hover:bg-gray-200 transition-all duration-300 border border-white">
-                        Lets go
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        </AnimatePresence>
+      {/* Modal Content */}
+      {modal && selectedItem !== null && (
+        <PopUpModals
+          onClick={() => setModal(false)}
+          image={selectedItem.image}
+          title={selectedItem.title}
+          description={selectedItem.description}
+          tags={selectedItem.tags}
+        />
       )}
     </>
   );
