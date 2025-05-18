@@ -142,6 +142,10 @@ function Projects() {
           title={selectedItem.title}
           description={selectedItem.description}
           tags={selectedItem.tags}
+          githubLink={selectedItem.github}
+          isLinked={selectedItem.isLinked}
+          link={selectedItem.link}
+          cta={selectedItem.cta}
         />
       )}
     </>

@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Lanyard from "../../../app/components/Lanyard";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
@@ -15,8 +15,9 @@ const formSchema = z.object({
 
 const ContactSection = () => {
   const form = useRef<HTMLFormElement>(null);
+  const [isLoading, setIsLoading] = useState(false);
 
-  const sendEmail = (e: React.FormEvent) => {
+  const sendEmail = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!form.current) return;
@@ -42,24 +43,32 @@ const ContactSection = () => {
       return;
     }
 
-    emailjs
-      .sendForm(
-        "service_x8u7oup",
-        "template_pewvlxw",
-        form.current,
-        "0fwvCkIqeHTUwVVkw"
-      )
-      .then(
-        () => {
-          toast.success("Email sent successfully!");
-          if (form.current) {
-            form.current.reset();
+    setIsLoading(true);
+
+    try {
+      await emailjs
+        .sendForm(
+          "service_x8u7oup",
+          "template_pewvlxw",
+          form.current,
+          "0fwvCkIqeHTUwVVkw"
+        )
+        .then(
+          () => {
+            toast.success("Email sent successfully!");
+            if (form.current) {
+              form.current.reset();
+            }
+          },
+          () => {
+            console.log("Failed to send email.");
           }
-        },
-        () => {
-          console.log("Failed to send email.");
-        }
-      );
+        );
+    } catch (error) {
+      toast.error("Failed to send email, Try again later.");
+    } finally {
+      setIsLoading(false);
+    }
   };
   return (
     <div className="max-w-full max-h-full bg-zinc-200 flex flex-col items-center justify-center">
@@ -133,11 +142,21 @@ const ContactSection = () => {
                 </span>
               </div>
             </label>
-            <input
-              type="submit"
-              value="Send"
-              className="w-full bg-zinc-950 px-4 py-2 text-white rounded-full cursor-pointer hover:bg-zinc-900 transition duration-300 ease-in-out"
-            />
+            <div className="">
+              <button
+                type="submit"
+                value="send"
+                className="w-full bg-zinc-950 px-4 py-2 text-white rounded-full cursor-pointer hover:bg-zinc-900 transition duration-300 ease-in-out"
+              >
+                {/* {isLoading && (
+                  <div className="w-20 h-20">
+                    <Lottie animationData={lootieJson} loop autoplay />
+                  </div>
+                )} */}
+                Send
+              </button>
+            </div>
+            {isLoading && <p>Loading..</p>}
           </form>
         </div>
       </div>

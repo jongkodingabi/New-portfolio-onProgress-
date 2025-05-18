@@ -7,6 +7,10 @@ type PopUpModalsProps = {
   title: string;
   description: string;
   tags: string[];
+  isLinked: boolean;
+  githubLink: string;
+  link?: string;
+  cta: string;
 };
 
 const PopUpModals = ({
@@ -15,6 +19,10 @@ const PopUpModals = ({
   title,
   description,
   tags,
+  isLinked,
+  githubLink,
+  link,
+  cta,
 }: PopUpModalsProps) => {
   return (
     <AnimatePresence>
@@ -68,15 +76,23 @@ const PopUpModals = ({
                 ))}
               </div>
               <div className="flex flex-row p-2 mb-4">
-                <button className="cursor-pointer w-full sm:w-auto px-4 py-1 text-lg font-bold bg-white rounded-full text-black hover:bg-gray-200 transition-all duration-300 border border-white">
-                  Lets go
-                </button>
-
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <button className="cursor-pointer w-full sm:w-auto px-4 py-1 text-lg font-bold bg-white rounded-full text-black hover:bg-gray-200 transition-all duration-300 border border-white">
-                    Lets go
-                  </button>
-                </a>
+                {isLinked && link ? (
+                  <a href={link} target="_blank" rel="noopener noreferrer">
+                    <button className="cursor-pointer w-full sm:w-auto px-4 py-1 text-lg font-bold bg-white rounded-full text-black hover:bg-gray-200 transition-all duration-300 border border-white">
+                      {cta}
+                    </button>
+                  </a>
+                ) : (
+                  <a
+                    href={githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="cursor-pointer w-full sm:w-auto px-4 py-1 text-lg font-bold bg-white rounded-full text-black hover:bg-gray-200 transition-all duration-300 border border-white">
+                      {cta}
+                    </button>
+                  </a>
+                )}
               </div>
             </div>
           </div>
