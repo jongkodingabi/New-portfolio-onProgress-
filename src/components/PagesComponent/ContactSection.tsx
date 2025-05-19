@@ -6,6 +6,7 @@ import Person from "@/assets/svg/person.svg";
 import Email from "@/assets/svg/email.svg";
 import Message from "@/assets/svg/message.svg";
 import z from "zod";
+import loaderAnimate from "@/assets/loaderAnimation/loader-animate.svg";
 
 const formSchema = z.object({
   name: z.coerce.string().min(3, "Invalid name input"),
@@ -142,21 +143,23 @@ const ContactSection = () => {
                 </span>
               </div>
             </label>
-            <div className="">
+            <div className="w-full flex items-center gap-4">
               <button
                 type="submit"
                 value="send"
-                className="w-full bg-zinc-950 px-4 py-2 text-white rounded-full cursor-pointer hover:bg-zinc-900 transition duration-300 ease-in-out"
+                className="flex-1 bg-zinc-950 px-4 py-2 text-white rounded-full cursor-pointer hover:bg-zinc-900 transition duration-300 ease-in-out flex items-center justify-center"
+                disabled={isLoading}
               >
-                {/* {isLoading && (
-                  <div className="w-20 h-20">
-                    <Lottie animationData={lootieJson} loop autoplay />
-                  </div>
-                )} */}
-                Send
+                {isLoading ? (
+                  <img
+                    src={loaderAnimate}
+                    alt="Loading..."
+                    className="w-6 h-6 mr-2 animate-spin"
+                  />
+                ) : null}
+                {isLoading ? "Sending..." : "Send"}
               </button>
             </div>
-            {isLoading && <p>Loading..</p>}
           </form>
         </div>
       </div>

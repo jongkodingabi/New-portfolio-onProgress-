@@ -21,7 +21,6 @@
     "deps": "^1.0.0",
     "framer-motion": "^12.5.0",
     "gsap": "^3.13.0",
-    "lottie-react": "^2.4.1",
     "meshline": "^3.3.1",
     "motion": "^12.5.0",
     "ogl": "^1.0.11",
