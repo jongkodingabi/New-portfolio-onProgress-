@@ -41,9 +41,9 @@ export function About() {
           <div className="col-span-1 md:col-span-3 md:row-span-1 md:col-start-3 bg-zinc-900 rounded-2xl p-4 md:p-8">
             <p className="text-left text-lg md:text-2xl font-mono">
               <span className="font-extrabold">
-                Hi there! I'm Abisam Hazim — a web developer who’s genuinely
-                passionate about building websites that not only look good but
-                also feel good to use.
+                Hi there! I'm Abisam Hazim — a junior web developer who’s
+                genuinely passionate about building websites that not only look
+                good but also feel good to use.
               </span>{" "}
               I love diving into both front-end and back-end development because
               I believe great digital experiences are built when both sides work
