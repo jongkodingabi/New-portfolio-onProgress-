@@ -103,7 +103,7 @@ function Projects() {
                     "px-4 py-1 rounded-full transition-all duration-300 border text-xs md:text-sm font-semibold",
                     isActive
                       ? "bg-white text-black border-white"
-                      : "bg-transparent text-gray-300 border-white hover:bg-gray-600"
+                      : "bg-transparent bg-opacity-70 border border-white backdrop-blur-sm hover:bg-gray-600"
                   )}
                 >
                   {category}

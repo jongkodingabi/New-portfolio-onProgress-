@@ -1,9 +1,9 @@
-import YourMeals from "@/assets/projects/YourMeals.png";
-import BeedeGo from "@/assets/projects/beedego.png";
+import YourMeals from "@/assets/projects/YourMeals .webp";
+import BeedeGo from "@/assets/projects/beedego.webp";
 import KataKita from "@/assets/projects/kataKita.png";
 import Caseths from "@/assets/projects/caseth-la-magasin_web.jpg";
 import TodoApp from "@/assets/projects/To-Do List App.png";
-import Equran from "@/assets/projects/e-quran-project.png";
+import Equran from "@/assets/projects/e-quran-project.webp";
 import BangbaraPOS from "@/assets/projects/BangbaraPos-project.jpg";
 import BlogApp from "@/assets/projects/blog-app.jpg";
 
