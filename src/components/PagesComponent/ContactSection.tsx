@@ -7,6 +7,7 @@ import Email from "@/assets/svg/email.svg";
 import Message from "@/assets/svg/message.svg";
 import z from "zod";
 import loaderAnimate from "@/assets/loaderAnimation/loader-animate.svg";
+import stars from "@/assets/svg/stars.svg";
 
 const formSchema = z.object({
   name: z.coerce.string().min(3, "Invalid name input"),
@@ -72,7 +73,7 @@ const ContactSection = () => {
     }
   };
   return (
-    <div className="max-w-full max-h-full bg-zinc-200 flex flex-col items-center justify-center">
+    <div className="max-w-full max-h-full bg-gradient-to-br from-neutral-800 via-black to-black flex flex-col items-center justify-center">
       <Toaster position="top-center" />
       <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl gap-4 p-4">
         {/* Lanyard */}
@@ -82,10 +83,9 @@ const ContactSection = () => {
 
         {/* Form */}
         <div className="flex-1 flex flex-col py-10 items-center justify-center md:mt-55">
-          <div className="flex text-left pl-2 w-full max-w-md">
-            <h1 className="text-2xl text-left font-bold text-black">
-              Message Me
-            </h1>
+          <div className="flex text-left pl-2 w-full max-w-md text-md md:text-2xl">
+            <img src={stars} className="w-10" alt="stars" />
+            <h1 className="text-left font-bold text-gray-100">Message Me</h1>
           </div>
           <form
             action=""
@@ -102,11 +102,15 @@ const ContactSection = () => {
                   type="text"
                   name="name"
                   placeholder="Your Name"
-                  className="w-full border-b-2 border-black flex-1 py-2 placeholder-gray-500 outline-none"
+                  className="w-full border-b-2 border-gray-100 flex-1 py-2 placeholder-gray-500 outline-none"
                   required
                 />
                 <span className="absolute top-2 right-0 inset-y-0 pr-0 pb-2 flex items-center">
-                  <img src={Person} alt="person svg" className="w-6 h-6" />
+                  <img
+                    src={Person}
+                    alt="person svg"
+                    className="w-6 h-6 invert"
+                  />
                 </span>
               </div>
             </label>
@@ -119,11 +123,15 @@ const ContactSection = () => {
                   type="email"
                   name="email"
                   placeholder="Your email"
-                  className="w-full border-b-2 border-black flex-1 py-2 placeholder-gray-500 outline-none"
+                  className="w-full border-b-2 border-gray-100 flex-1 py-2 placeholder-gray-500 outline-none"
                   required
                 />
                 <span className="absolute top-2 right-0 inset-y-0 pr-0 pb-2 flex items-center">
-                  <img src={Email} alt="person svg" className="w-6 h-6" />
+                  <img
+                    src={Email}
+                    alt="person svg"
+                    className="w-6 h-6 invert"
+                  />
                 </span>
               </div>
             </label>
@@ -135,11 +143,15 @@ const ContactSection = () => {
                 <textarea
                   name="message"
                   placeholder="Your message"
-                  className="w-full border-b-2 border-black flex-1 py-2 placeholder-gray-500 outline-none"
+                  className="w-full border-b-2 border-gray-100 flex-1 py-2 placeholder-gray-500 outline-none"
                   required
                 ></textarea>
                 <span className="absolute top-2 right-0 inset-y-0 pr-0 pb-2 flex items-center">
-                  <img src={Message} alt="person svg" className="w-6 h-6" />
+                  <img
+                    src={Message}
+                    alt="person svg"
+                    className="w-6 h-6 invert"
+                  />
                 </span>
               </div>
             </label>
@@ -147,7 +159,7 @@ const ContactSection = () => {
               <button
                 type="submit"
                 value="send"
-                className="flex-1 bg-zinc-950 px-4 py-2 text-white rounded-full cursor-pointer hover:bg-zinc-900 transition duration-300 ease-in-out flex items-center justify-center"
+                className="flex-1 bg-gray-200 text-black px-4 py-2 rounded-full cursor-pointer hover:bg-gray-300 transition duration-300 ease-in-out flex items-center justify-center"
                 disabled={isLoading}
               >
                 {isLoading ? (

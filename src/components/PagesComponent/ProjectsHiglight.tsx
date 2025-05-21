@@ -10,7 +10,7 @@ export default function ProjectsHiglight() {
   return (
     <div className="bg-black w-screen flex flex-col items-center justify-center text-center overflow-x-hidden">
       {/* Title */}
-      <div className="z-10 flex justify-center w-full items-start mt-20">
+      <div className="z-10 flex justify-center w-full items-start mt-20  text-xs sm:text-base md:text-xl">
         <img src={stars} alt="Stars" className="w-12" />
         <h1 className="font-bold">Recent Projects</h1>
       </div>

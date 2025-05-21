@@ -3,7 +3,6 @@ import { About } from "../components/PagesComponent/About";
 import { Hero } from "../components/PagesComponent/Hero";
 import ProjectsHiglight from "../components/PagesComponent/ProjectsHiglight";
 import Quote from "../components/PagesComponent/Quote";
-import transition from "@/components/Transition";
 import ContactHeader from "@/components/PagesComponent/ContactHeader";
 import ContactSection from "@/components/PagesComponent/ContactSection";
 import Footer from "@/components/PagesComponent/Footer";
@@ -36,4 +35,4 @@ function Home() {
   );
 }
 
-export default transition(Home);
+export default Home;

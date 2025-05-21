@@ -12,7 +12,7 @@ export function About() {
   return (
     <>
       <div className="bg-black max-w-screen min-h-screen flex flex-col items-center justify-center text-center mt-[100vh] overflow-x-hidden relative">
-        <div className="z-10 flex justify-center w-full items-start mt-20">
+        <div className="z-10 flex justify-center w-full mt-20">
           <img src={stars} alt="Stars" className="w-12" />
           <h1 className="font-bold">About Me</h1>
         </div>

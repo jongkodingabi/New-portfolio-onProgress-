@@ -12,7 +12,7 @@ export default function Header({ className }: className) {
   }, []);
 
   return (
-    <header className={`${className} fixed top-0 left-0 w-full`}>
+    <header className={`${className} z-30 fixed top-0 left-0 w-full`}>
       <img
         src={myLogo}
         alt="myLogo"

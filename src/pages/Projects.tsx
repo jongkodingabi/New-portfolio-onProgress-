@@ -151,4 +151,4 @@ function Projects() {
   );
 }
 
-export default transition(Projects);
+export default Projects;

@@ -2,6 +2,7 @@ import ScrollVelocity from "@/components/reactbits/ScrollVelocity";
 import Logo from "@/assets/logo_new.webp";
 import Header from "@/components/Header";
 import Navigation from "../Navigation";
+import FadeUp from "../Animations/FadeUp";
 
 export function Hero() {
   return (
@@ -15,12 +16,15 @@ export function Hero() {
 
       {/* Hero Content */}
       <div className="absolute z-10 text-white flex flex-col items-center justify-center">
-        <img
-          src={Logo}
-          alt="myLogo"
-          className="relative z-[999] w-25"
-          loading="lazy"
-        />
+        <FadeUp>
+          <img
+            src={Logo}
+            alt="myLogo"
+            className="relative z-[999] w-25"
+            loading="lazy"
+          />
+        </FadeUp>
+
         <p className="pointer-events-none text-center bg-gradient-to-t from-slate-300 to-gray-500 bg-clip-text text-transparent text-xl font-medium leading-none mb-2">
           ABISAM HAZIM
         </p>
