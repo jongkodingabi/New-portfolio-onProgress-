@@ -29,16 +29,6 @@ function AppContent() {
     }, 2000);
   }, []);
 
-  useEffect(() => {
-    gsap.from(".fade-left", {
-      x: -100,
-      opacity: 0,
-      duration: 1,
-      stagger: 0.2,
-      ease: "power2.out",
-    });
-  }, []);
-
   return (
     <>
       {loading ? (

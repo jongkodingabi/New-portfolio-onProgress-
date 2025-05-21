@@ -9,30 +9,28 @@ export default function Quote() {
           <h1 className="">CONTACT</h1>
         </span>
       </span>
-      <FadeUp>
-        <div className="py-7 lg:mt-80 mt-25">
-          {/* Title */}
-          <h3
-            className="text-2xl md:text-6xl mx-8 md:mx-20 lg:mx-60 lg:text-7xl tracking-tighter font-extrabold font-impact text-white text-center"
-            data-aos="fade-up"
-          >
-            I'D LOVE TO HEAR FROM YOU
-          </h3>
-          <h3
-            className="text-2xl md:text-6xl mx-8 md:mx-20 lg:mx-60 lg:text-7xl tracking-tighter font-extrabold font-impact text-gray-400 text-center"
-            data-aos="fade-up"
-          >
-            CONTACT ME
-          </h3>
+      <div className="py-7 lg:mt-80 mt-25">
+        {/* Title */}
+        <h3
+          className="text-2xl md:text-6xl mx-8 md:mx-20 lg:mx-60 lg:text-7xl tracking-tighter font-extrabold font-impact text-white text-center"
+          data-aos="fade-up"
+        >
+          I'D LOVE TO HEAR FROM YOU
+        </h3>
+        <h3
+          className="text-2xl md:text-6xl mx-8 md:mx-20 lg:mx-60 lg:text-7xl tracking-tighter font-extrabold font-impact text-gray-400 text-center"
+          data-aos="fade-up"
+        >
+          CONTACT ME
+        </h3>
 
-          {/* Text */}
-          <p className="text-xs md:text-2xl font-bold text-gray-400 mt-4 mx-4 md:mx-40">
-            Let's turn ideas into reality! If you have a project in mind, need
-            assistance, or simply want to start a conversation, feel free to
-            drop me a message anytime.
-          </p>
-        </div>
-      </FadeUp>
+        {/* Text */}
+        <p className="text-xs md:text-2xl font-bold text-gray-400 mt-4 mx-4 md:mx-40">
+          Let's turn ideas into reality! If you have a project in mind, need
+          assistance, or simply want to start a conversation, feel free to drop
+          me a message anytime.
+        </p>
+      </div>
     </div>
   );
 }

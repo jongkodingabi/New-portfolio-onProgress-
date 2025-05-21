@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import myLogo from "../assets/myLogo.png";
+import myLogo from "../assets/logo_new.webp";
 type className = {
   className: string;
 };
@@ -16,7 +16,7 @@ export default function Header({ className }: className) {
       <img
         src={myLogo}
         alt="myLogo"
-        className="w-10 md:w-16 ml-4 mt-4"
+        className="w-10 md:w-16 ml-4 mt -4"
         loading="lazy"
       />
       <div className="mr-10 mt-8 text-base md:text-xl">

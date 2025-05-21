@@ -36,7 +36,7 @@ export default function Navigation() {
 
   return (
     <Dock
-      className="z-20 fixed bg-black"
+      className="z-99 fixed bg-black"
       items={items}
       panelHeight={68}
       baseItemSize={50}

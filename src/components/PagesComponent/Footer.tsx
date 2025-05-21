@@ -1,4 +1,4 @@
-import myLogo from "@/assets/myLogo.png";
+import myLogo from "@/assets/logo_new.webp";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
