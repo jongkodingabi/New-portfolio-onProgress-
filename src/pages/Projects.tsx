@@ -81,9 +81,8 @@ function Projects() {
           <Header className="fixed flex justify-between text-xl left-0 w-full z-20 text-white" />
           {/* Bloop animate header */}
           <div className="absolute inset-0 flex flex-col items-center justify-center mx-auto z-2 max-w-lg">
-            <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-            <div className="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-            <div className="absolute top-0 -bottom-10 left-30 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+            <div className="fixed top-0 left-0 w-300 h-120 bg-violet-300 rounded-full filter blur-[200px] opacity-40"></div>
+            <div className="fixed top-0 right-7 w-120 h-100 bg-rose-300 rounded-full filter blur-[200px] opacity-40"></div>
             <h1 className="absolute top-14 text-center text-white font-extrabold tracking-tighter z-[9999] flex justify-center items-center">
               My Projects
             </h1>

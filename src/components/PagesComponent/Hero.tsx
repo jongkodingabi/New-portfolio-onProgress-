@@ -1,7 +1,5 @@
-// import Particles from "../reactbits/Particles";
 import ScrollVelocity from "@/components/reactbits/ScrollVelocity";
 import Logo from "@/assets/logo_new.webp";
-// import MainButton from "@/components/button/MainButton";
 import Header from "@/components/Header";
 import Navigation from "../Navigation";
 
@@ -13,22 +11,7 @@ export function Hero() {
       {/* Header */}
       <Header className="absolute flex justify-between text-xl left-0 w-full z-20 bg-gradient-to-t from-slate-300 to-gray-500 bg-clip-text text-transparent" />
       <div className="absolute top-0 left-0 w-300 h-120 bg-violet-300 rounded-full filter blur-[160px] opacity-40"></div>
-      {/* <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500 rounded-full filter blur-[160px] opacity-40 animate-pulse delay-1000"></div> */}
       <div className="absolute top-0 right-7 w-120 h-100 bg-rose-300 rounded-full filter blur-[160px] opacity-40"></div>
-
-      {/* Particels Background */}
-      {/* <div className="absolute inset-0 z-0">
-      <Particles
-        particleColors={["#ffffff", "#ffffff"]}
-        particleCount={90}
-        particleSpread={20}
-        speed={0.1}
-        particleBaseSize={100}
-        moveParticlesOnHover={true}
-        alphaParticles={false}
-        disableRotation={false}
-      />
-      </div> */}
 
       {/* Hero Content */}
       <div className="absolute z-10 text-white flex flex-col items-center justify-center">

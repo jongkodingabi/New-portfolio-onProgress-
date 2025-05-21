@@ -1,4 +1,3 @@
-import TextPressure from "../reactbits/TextPressure";
 import Profile from "@/assets/png/me.webp";
 import SliderComponent from "@/components/reactbits/SliderComponent";
 import Resume from "@/assets/resume.svg";
@@ -6,27 +5,16 @@ import SecondaryButton from "../button/SecondaryButton";
 import Instagram from "@/assets/svg/instagram.svg";
 import Linkedin from "@/assets/svg/linkedin.svg";
 import Github from "@/assets/svg/github.svg";
+import stars from "@/assets/svg/stars.svg";
 import GitHubCalendar from "react-github-calendar";
 
 export function About() {
   return (
     <>
-      {/* Masking Bg */}
       <div className="bg-black max-w-screen min-h-screen flex flex-col items-center justify-center text-center mt-[100vh] overflow-x-hidden relative">
-        {/* Text Pressure Animation */}
-        <div className="z-10 flex items-center justify-center w-full">
-          <TextPressure
-            text="Hello!"
-            flex={false} // Pastikan ini false agar tidak mengganggu
-            alpha={false}
-            stroke={false}
-            width={true}
-            weight={true}
-            italic={true}
-            textColor="#ffffff"
-            strokeColor="#ff0000"
-            className="w-full text-center"
-          />
+        <div className="z-10 flex justify-center w-full items-start mt-20">
+          <img src={stars} alt="Stars" className="w-12" />
+          <h1 className="font-bold">About Me</h1>
         </div>
         <div className="max-w-full mx-auto max-h-full p-6 md:p-14">
           <div className="grid grid-cols-1 md:grid-cols-5 grid-rows-none md:grid-rows-1 gap-4">

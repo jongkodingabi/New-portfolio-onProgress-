@@ -45,6 +45,7 @@ const PopUpModals = ({
               >
                 <img
                   src={close}
+                  loading="lazy"
                   alt="close icon"
                   className="w-6 h-6 cursor-pointer"
                 />

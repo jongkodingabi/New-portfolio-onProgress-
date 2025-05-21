@@ -7,7 +7,6 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import { AnimatePresence } from "framer-motion";
 import BlurText from "./components/reactbits/BlurText";
-import gsap from "gsap";
 function App() {
   return (
     <>

@@ -37,6 +37,7 @@ export default function MainCard({
                 <img
                   src={img}
                   alt="Project Image"
+                  loading="lazy"
                   className="h-full w-full object-contain group-hover:scale-110 group-hover:rotate-2 transition-transform duration-300"
                 />
               </div>

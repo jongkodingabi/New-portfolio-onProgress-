@@ -1,5 +1,3 @@
-import FadeUp from "../Animations/FadeUp";
-
 export default function Quote() {
   return (
     <div className="bg-black w-full flex flex-col items-center justify-center text-center overflow-x-hidden">
