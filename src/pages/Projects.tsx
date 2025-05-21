@@ -6,7 +6,6 @@ import { GridPattern } from "@/components/reactbits/GridPattern";
 import Header from "@/components/Header";
 import Navigation from "@/components/Navigation";
 import MainCard from "@/components/reactbits/MainCard";
-import transition from "@/components/Transition";
 import itemsProjects from "@/ProjectItems";
 
 import PopUpModals from "@/components/Modals/PopUpModals";

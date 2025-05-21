@@ -83,7 +83,7 @@ const ContactSection = () => {
 
         {/* Form */}
         <div className="flex-1 flex flex-col py-10 items-center justify-center md:mt-55">
-          <div className="flex text-left pl-2 w-full max-w-md text-md md:text-2xl">
+          <div className="flex text-left pl-2 w-full max-w-md text-md md:text-xl">
             <img src={stars} className="w-10" alt="stars" />
             <h1 className="text-left font-bold text-gray-100">Message Me</h1>
           </div>
