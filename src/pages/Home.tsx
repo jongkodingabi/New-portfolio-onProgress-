@@ -6,8 +6,12 @@ import Quote from "../components/PagesComponent/Quote";
 import ContactHeader from "@/components/PagesComponent/ContactHeader";
 import ContactSection from "@/components/PagesComponent/ContactSection";
 import Footer from "@/components/PagesComponent/Footer";
+import { useEffect } from "react";
 
 function Home() {
+  useEffect(() => {
+    document.title = "Abisam | Junior Web Developer Portfolio";
+  }, []);
   return (
     <>
       <section className="overflow-hidden scrollbar-hidden">

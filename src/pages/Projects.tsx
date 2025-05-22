@@ -11,6 +11,9 @@ import itemsProjects from "@/ProjectItems";
 import PopUpModals from "@/components/Modals/PopUpModals";
 
 function Projects() {
+  useEffect(() => {
+    document.title = "Projects | Abisam";
+  }, []);
   // Start Filters
 
   // Active button
