@@ -222,3 +222,50 @@ button:focus-visible {
   -moz-animation: ani-mouse 2.5s linear infinite;
   animation: ani-mouse 2.5s linear infinite;
 }
+
+.slider-right {
+  height: 200px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #fff 10% 90%, transparent);
+}
+
+.slider-track-right {
+  display: flex;
+  width: calc(185px * 24);
+  animation: scrollRight 17s linear infinite reverse;
+  -webkit-animation: scrollRight 17s linear infinite reverse;
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-185px * 12));
+    -webkit-transform: translateX(calc(-185px * 12));
+    -moz-transform: translateX(calc(-185px * 12));
+    -ms-transform: translateX(calc(-185px * 12));
+    -o-transform: translateX(calc(-185px * 12));
+  }
+}
+
+.slider-track-right .slide {
+  height: 200px;
+  width: 185px;
+  display: flex;
+  align-items: center;
+  perspective: 100px;
+}
+
+.slider-track-right .slide img {
+  object-fit: contain;
+}
