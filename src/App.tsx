@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import { AnimatePresence } from "framer-motion";
 import BlurText from "./components/reactbits/BlurText";
+import ScrollToTop from "./components/Animations/ScrolltoTop";
 function App() {
   return (
     <>
@@ -44,12 +45,15 @@ function AppContent() {
           </div>
         </div>
       ) : (
-        <AnimatePresence mode="wait">
-          <Routes location={location} key={location.pathname}>
-            <Route index element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-          </Routes>
-        </AnimatePresence>
+        <>
+          <ScrollToTop />
+          <AnimatePresence mode="wait">
+            <Routes location={location} key={location.pathname}>
+              <Route index element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
+            </Routes>
+          </AnimatePresence>
+        </>
       )}
     </>
   );
