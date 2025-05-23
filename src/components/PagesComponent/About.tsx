@@ -5,17 +5,12 @@ import SecondaryButton from "../button/SecondaryButton";
 import Instagram from "@/assets/svg/instagram.svg";
 import Linkedin from "@/assets/svg/linkedin.svg";
 import Github from "@/assets/svg/github.svg";
-import stars from "@/assets/svg/stars.svg";
 import GitHubCalendar from "react-github-calendar";
 
 export function About() {
   return (
     <>
       <div className="bg-black max-w-screen min-h-screen flex flex-col items-center justify-center text-center mt-[100vh] overflow-x-hidden relative">
-        <div className="z-10 flex justify-center w-full mt-20">
-          <img src={stars} alt="Stars" className="w-12" />
-          <h1 className="font-bold">About Me</h1>
-        </div>
         <div className="max-w-full mx-auto max-h-full p-6 md:p-14">
           <div className="grid grid-cols-1 md:grid-cols-5 grid-rows-none md:grid-rows-1 gap-4">
             {/* Profile Picture */}

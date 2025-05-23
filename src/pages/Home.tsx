@@ -1,7 +1,5 @@
 import "../App.css";
-import { About } from "../components/PagesComponent/About";
 import { Hero } from "../components/PagesComponent/Hero";
-import ProjectsHiglight from "../components/PagesComponent/ProjectsHiglight";
 import Quote from "../components/PagesComponent/Quote";
 import ContactHeader from "@/components/PagesComponent/ContactHeader";
 import ContactSection from "@/components/PagesComponent/ContactSection";
@@ -9,6 +7,8 @@ import Footer from "@/components/PagesComponent/Footer";
 import { useEffect } from "react";
 import { useState } from "react";
 import BlurText from "@/components/reactbits/BlurText";
+import TabComponent from "@/components/PagesComponent/TabComponent";
+import { About } from "@/components/PagesComponent/About";
 
 function Home() {
   const [isLoading, setIsLoading] = useState(false);
@@ -52,7 +52,7 @@ function Home() {
             <About />
           </section>
           <section className="overflow-hidden" id="projects">
-            <ProjectsHiglight />
+            <TabComponent />
           </section>
           <section className="overflow-hidden" id="quote">
             <Quote />

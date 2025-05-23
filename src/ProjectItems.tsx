@@ -1,11 +1,11 @@
 import YourMeals from "@/assets/projects/YourMeals .webp";
 import BeedeGo from "@/assets/projects/beedego.webp";
 import KataKita from "@/assets/projects/kataKita.webp";
-import Caseths from "@/assets/projects/caseth-la-magasin_web.jpg";
+import Caseths from "@/assets/projects/caseth-la-magasin_web.webp";
 import TodoApp from "@/assets/projects/To-Do List App.webp";
 import Equran from "@/assets/projects/e-quran-project.webp";
-import BangbaraPOS from "@/assets/projects/BangbaraPos-project.jpg";
-import BlogApp from "@/assets/projects/blog-app.jpg";
+import BangbaraPOS from "@/assets/projects/BangbaraPos-project.webp";
+import BlogApp from "@/assets/projects/blog-app.webp";
 
 const itemsProjects = [
   {
