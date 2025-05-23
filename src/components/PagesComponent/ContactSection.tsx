@@ -1,87 +1,86 @@
-import { useRef, useState } from "react";
+// import { useRef, useState } from "react";
 import Lanyard from "../../../app/components/Lanyard";
-import emailjs from "@emailjs/browser";
-import toast, { Toaster } from "react-hot-toast";
-import Person from "@/assets/svg/person.svg";
-import Email from "@/assets/svg/email.svg";
-import Message from "@/assets/svg/message.svg";
-import z from "zod";
-import loaderAnimate from "@/assets/loaderAnimation/loader-animate.svg";
-import stars from "@/assets/svg/stars.svg";
+// import emailjs from "@emailjs/browser";
+// import toast, { Toaster } from "react-hot-toast";
+// import Person from "@/assets/svg/person.svg";
+// import Email from "@/assets/svg/email.svg";
+// import Message from "@/assets/svg/message.svg";
+// import z from "zod";
+// import loaderAnimate from "@/assets/loaderAnimation/loader-animate.svg";
+// import stars from "@/assets/svg/stars.svg";
 
-const formSchema = z.object({
-  name: z.coerce.string().min(3, "Invalid name input"),
-  email: z.coerce.string().email("Invalid email address"),
-  message: z.coerce.string().min(5, "Message is required min 5 characters"),
-});
+// const formSchema = z.object({
+//   name: z.coerce.string().min(3, "Invalid name input"),
+//   email: z.coerce.string().email("Invalid email address"),
+//   message: z.coerce.string().min(5, "Message is required min 5 characters"),
+// });
 
 const ContactSection = () => {
-  const form = useRef<HTMLFormElement>(null);
-  const [isLoading, setIsLoading] = useState(false);
+  // const form = useRef<HTMLFormElement>(null);
+  // const [isLoading, setIsLoading] = useState(false);
 
-  const sendEmail = async (e: React.FormEvent) => {
-    e.preventDefault();
+  // const sendEmail = async (e: React.FormEvent) => {
+  //   e.preventDefault();
 
-    if (!form.current) return;
+  //   if (!form.current) return;
 
-    // Ambil data dari form
-    const formData = new FormData(form.current);
-    const data = {
-      name: formData.get("name") as string,
-      email: formData.get("email") as string,
-      message: formData.get("message") as string,
-    };
+  //   // Ambil data dari form
+  //   const formData = new FormData(form.current);
+  //   const data = {
+  //     name: formData.get("name") as string,
+  //     email: formData.get("email") as string,
+  //     message: formData.get("message") as string,
+  //   };
 
-    // Validasi dengan Zod
-    const result = formSchema.safeParse(data);
-    if (!result.success) {
-      const errors = result.error.flatten().fieldErrors;
-      toast.error(
-        errors.name?.[0] ||
-          errors.email?.[0] ||
-          errors.message?.[0] ||
-          "Please fill in all fields correctly."
-      );
-      return;
-    }
+  //   // Validasi dengan Zod
+  //   const result = formSchema.safeParse(data);
+  //   if (!result.success) {
+  //     const errors = result.error.flatten().fieldErrors;
+  //     toast.error(
+  //       errors.name?.[0] ||
+  //         errors.email?.[0] ||
+  //         errors.message?.[0] ||
+  //         "Please fill in all fields correctly."
+  //     );
+  //     return;
+  //   }
 
-    setIsLoading(true);
+  //   setIsLoading(true);
 
-    try {
-      await emailjs
-        .sendForm(
-          "service_x8u7oup",
-          "template_pewvlxw",
-          form.current,
-          "0fwvCkIqeHTUwVVkw"
-        )
-        .then(
-          () => {
-            toast.success("Email sent successfully!");
-            if (form.current) {
-              form.current.reset();
-            }
-          },
-          () => {
-            console.log("Failed to send email.");
-          }
-        );
-    } catch (error) {
-      toast.error("Failed to send email, Try again later.");
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  //   try {
+  //     await emailjs
+  //       .sendForm(
+  //         "service_x8u7oup",
+  //         "template_pewvlxw",
+  //         form.current,
+  //         "0fwvCkIqeHTUwVVkw"
+  //       )
+  //       .then(
+  //         () => {
+  //           toast.success("Email sent successfully!");
+  //           if (form.current) {
+  //             form.current.reset();
+  //           }
+  //         },
+  //         () => {
+  //           console.log("Failed to send email.");
+  //         }
+  //       );
+  //   } catch (error) {
+  //     toast.error("Failed to send email, Try again later.");
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+  // };
   return (
     <div className="max-w-full max-h-full bg-gradient-to-br from-neutral-800 via-black to-black flex flex-col items-center justify-center">
-      <Toaster position="top-center" />
+      {/* <Toaster position="top-center" /> */}
       <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl gap-4 p-4">
         {/* Lanyard */}
         <div className="flex-1 flex justify-center">
           <Lanyard />
         </div>
-
-        {/* Form */}
+        {/* Form
         <div className="flex-1 flex flex-col py-10 items-center justify-center md:mt-55">
           <div className="flex text-left pl-2 w-full max-w-md text-md md:text-xl">
             <img src={stars} className="w-10" alt="stars" />
@@ -173,7 +172,7 @@ const ContactSection = () => {
               </button>
             </div>
           </form>
-        </div>
+        </div> */}
       </div>
     </div>
   );
