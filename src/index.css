@@ -29,14 +29,6 @@ h1 {
   line-height: 1.1;
 }
 
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
 .slider-wrap {
   -webkit-mask-image: linear-gradient(
     to right,
@@ -268,6 +260,7 @@ button:focus-visible {
 .slider-left {
   overflow: hidden;
   position: relative;
+  width: 100%;
   mask-image: linear-gradient(
     to right,
     transparent,
@@ -279,7 +272,8 @@ button:focus-visible {
 
 .slider-track-left {
   display: flex;
-  animation: scrollLeft 25s linear infinite;
+  width: calc(185px * 6);
+  animation: scrollLeft 12s linear infinite;
 }
 
 .slider-track-left:hover {
@@ -289,9 +283,17 @@ button:focus-visible {
 @keyframes scrollLeft {
   0% {
     transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(calc(-185px * 3));
+    -webkit-transform: translateX(calc(-185px * 3));
+    -moz-transform: translateX(calc(-185px * 3));
+    -ms-transform: translateX(calc(-185px * 3));
+    -o-transform: translateX(calc(-185px * 3));
   }
 }
 

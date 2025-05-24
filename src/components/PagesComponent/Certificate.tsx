@@ -10,11 +10,11 @@ export const Certificate = () => {
         {/* Title */}
 
         <p className="text-lg font-light text-gray-400 mt-4 sm:mx-2">
-          Here are some of my projects that I have worked on.
+          Here are some of my certificates that I achieve.
         </p>
 
         <div className="flex flex-col space-y-18 justify-center items-center py-10">
-          {/* Card Projects */}
+          {/* Card certificates */}
           {certificates.map((certificate) => (
             <SertifCard
               key={certificate.id}
@@ -26,7 +26,7 @@ export const Certificate = () => {
             />
           ))}
         </div>
-        {/* Projects Nav */}
+        {/* certificates Nav */}
         <MainButton title="View All" />
       </div>
     </>

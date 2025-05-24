@@ -13,7 +13,7 @@ export default function ProjectsCards({
 }: CardsProps) {
   return (
     <>
-      <div className="group relative rounded-xl overflow-hidden bg-zinc-900 max-w-6xl mx-4 p-4 sm:p-6 md:p-10 flex flex-col md:flex-row items-start gap-8">
+      <div className="group relative rounded-xl overflow-hidden bg-zinc-900 hover:border-r hover:border-violet-400 ease-in-out max-w-6xl mx-4 p-4 sm:p-6 md:p-10 flex flex-col md:flex-row items-start gap-8">
         {/* Kiri - Konten Teks */}
         <div className="w-full md:w-1/2 text-left z-10 text-[10px] sm:text-xs md:text-sm">
           <h1 className="text-xl sm:text-2xl md:text-4xl font-bold text-white group-hover:opacity-100 transition-all">

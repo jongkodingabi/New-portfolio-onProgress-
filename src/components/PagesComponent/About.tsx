@@ -30,12 +30,14 @@ export function About() {
                 front-end and back-end development. For me, building a website
                 is not just about making it work, but also making sure it’s easy
                 and fun for people to use. I believe great digital experiences
-                happen when design and code work together. I mostly work with
-                modern frameworks like Laravel, React, and Tailwind CSS. These
-                tools help me create clean, responsive, and efficient websites.
-                I’m always open to feedback and new ideas, and I’m excited to
-                keep growing as a developer by working on real projects and
-                collaborating with others.
+                happen when design and code work together.
+                <span className="hidden md:block">
+                  I mostly work with modern frameworks like Laravel, React, and
+                  Tailwind CSS. These tools help me create clean, responsive,
+                  and efficient websites. I’m always open to feedback and new
+                  ideas, and I’m excited to keep growing as a developer by
+                  working on real projects and collaborating with others.
+                </span>
               </p>
               <div className="py-6 mt-7">
                 <h3 className="font-bold text-2xl flex justify-items-center mb-3">
@@ -55,7 +57,7 @@ export function About() {
             {/* Spotify + GitHub Calendar Combined Section */}
             <div className="col-span-5 grid grid-cols-1 md:grid-cols-5 gap-6">
               {/* Spotify Embed */}
-              <div className="col-span-1 md:col-span-2 bg-zinc-900 p-4 rounded-xl shadow-md flex items-center justify-center">
+              <div className="col-span-1 md:col-span-2 bg-zinc-900 border-r border-l border-violet-400 p-4 rounded-xl shadow-md flex items-center justify-center">
                 <iframe
                   src="https://open.spotify.com/embed/track/5ihDGnhQgMA0F0tk9fNLlA"
                   width="100%"
@@ -67,8 +69,7 @@ export function About() {
               </div>
 
               {/* GitHub Calendar */}
-              {/* GitHub Calendar */}
-              <div className="col-span-1 md:col-span-3 bg-zinc-900 p-4 rounded-xl shadow-md">
+              <div className="col-span-1 md:col-span-3 bg-zinc-900 border-r border-l border-violet-400 p-4 rounded-xl shadow-md">
                 <p className="text-left font-semibold text-white text-lg mb-2">
                   GitHub activity:
                 </p>
