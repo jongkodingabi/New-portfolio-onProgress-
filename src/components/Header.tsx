@@ -13,12 +13,18 @@ export default function Header({ className }: className) {
 
   return (
     <header className={`${className} z-30 fixed top-0 left-0 w-full`}>
-      <img
-        src={myLogo}
-        alt="myLogo"
-        className="w-10 md:w-16 ml-4 mt -4"
-        loading="lazy"
-      />
+      <div className="flex">
+        <img
+          src={myLogo}
+          alt="myLogo"
+          className="w-10 md:w-16 ml-4 mt -4"
+          loading="lazy"
+        />
+        <p className="text-sm font-bold text-white mt-8">
+          Code With Abisam {"</>"}
+        </p>
+      </div>
+
       <div className="mr-10 mt-8 text-base md:text-xl">
         {time.toLocaleTimeString("en-US", { timeZone: "Asia/Jakarta" })}
       </div>

@@ -279,7 +279,7 @@ button:focus-visible {
 
 .slider-track-left {
   display: flex;
-  animation: scrollLeft 20s linear infinite;
+  animation: scrollLeft 25s linear infinite;
 }
 
 .slider-track-left:hover {
