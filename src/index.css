@@ -217,6 +217,7 @@ button:focus-visible {
 }
 
 .slider-right {
+  top: 4px;
   height: 200px;
   margin: auto;
   position: relative;
@@ -261,4 +262,40 @@ button:focus-visible {
 
 .slider-track-right .slide img {
   object-fit: contain;
+}
+
+/* slider left */
+.slider-left {
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #fff 10%,
+    #fff 90%,
+    transparent
+  );
+}
+
+.slider-track-left {
+  display: flex;
+  animation: scrollLeft 20s linear infinite;
+}
+
+.slider-track-left:hover {
+  animation-play-state: paused !important;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 320px;
 }

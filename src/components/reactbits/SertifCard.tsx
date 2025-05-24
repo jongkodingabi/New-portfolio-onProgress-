@@ -3,38 +3,49 @@ type CardsProps = {
   description: string;
   imageUrl: string;
   date: string;
+  instance: string;
 };
 export default function ProjectsCards({
   title,
   description,
   imageUrl,
-  date,
+  instance,
 }: CardsProps) {
   return (
     <>
-      <div className="fade-left group rounded-xl bg-zinc-900 relative lg:max-w-5xl mx-4">
-        <div className="flex flex-col md:flex-row-reverse">
-          {/* Konten Teks */}
-          <div className="p-4 sm:p-6 md:p-10 mt-1 w-full md:w-1/2 max-w-full text-[9px] md:text-xs">
-            <h1 className="text-[2px] font-bold text-white opacity-45 group-hover:opacity-100 transition-all ease-in-out text-left">
-              {title}
-            </h1>
-            <p className="text-xs sm:text-sm md:text-lg font-light text-gray-300 opacity-45 group-hover:opacity-100 mt-2 text-left">
-              {description}
-            </p>
-            <div className="flex flex-wrap mt-4 gap-2 mb-2 text-gray-400">
-              <p>{date}</p>
-            </div>
-          </div>
+      <div className="group relative rounded-xl overflow-hidden bg-zinc-900 max-w-6xl mx-4 p-4 sm:p-6 md:p-10 flex flex-col md:flex-row items-start gap-8">
+        {/* Kiri - Konten Teks */}
+        <div className="w-full md:w-1/2 text-left z-10 text-[10px] sm:text-xs md:text-sm">
+          <h1 className="text-xl sm:text-2xl md:text-4xl font-bold text-white group-hover:opacity-100 transition-all">
+            {title}
+          </h1>
+          <p className="text-xs sm:text-sm md:text-base font-medium text-gray-400 mt-2">
+            {description}
+          </p>
 
-          {/* Gambar */}
-          <div className="w-full md:w-1/2 relative overflow-hidden md:rounded-r-xl rounded-b-2xl p-0 flex items-end">
+          <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-4 text-[10px] sm:text-sm text-gray-400 mt-4 sm:mt-6">
+            <span className="bg-zinc-800 px-3 py-1 rounded-full">
+              {instance}
+            </span>
+          </div>
+        </div>
+
+        {/* Kanan - Gambar Sertifikat */}
+        <div className="w-full md:w-1/2 relative flex justify-center items-end md:items-end -bottom-14 min-h-[200px] md:min-h-[300px]">
+          <div className="relative w-full md:absolute md:bottom-[-40px] md:right-0 transition-transform duration-500 ease-in-out group-hover:scale-[1.02] group-hover:rotate-1 group-hover:shadow-2xl">
             <img
               src={imageUrl}
-              alt="Certificate"
-              loading="lazy"
-              className="w-full object-cover h-[180px] md:h-[350px] translate-y-3"
+              alt="Form Builder Preview"
+              className="w-full h-auto object-cover rounded-xl border border-zinc-800 transition-transform duration-500 group-hover:scale-105 group-hover:rotate-3"
+              style={{ filter: "brightness(0.95) saturate(1.2)" }}
             />
+
+            {/* Hover bubble */}
+            <div className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+              <span className="bg-white/80 text-zinc-900 px-4 py-2 rounded-full text-xs sm:text-sm md:text-lg font-bold shadow-lg animate-bounce">
+                🎉 See More!
+              </span>
+            </div>
           </div>
         </div>
 

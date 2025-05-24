@@ -5,13 +5,13 @@ import Navigation from "../Navigation";
 
 export function Hero() {
   return (
-    <div className="absolute top-0 bg-black w-screen h-screen flex items-center justify-center text-center overflow-x-hidden">
+    <div className="absolute top-0 bg-zinc-900 w-screen h-screen flex items-center justify-center text-center overflow-x-hidden">
       {/* Masking Gradient at Bottom */}
       <div className="pointer-events-none absolute bottom-0 left-0 w-full h-32 z-30 bg-gradient-to-b from-transparent to-black" />
       {/* Header */}
       <Header className="absolute flex justify-between text-xl left-0 w-full z-20 bg-gradient-to-t from-slate-300 to-gray-500 bg-clip-text text-transparent" />
-      <div className="absolute top-0 left-0 w-300 h-120 bg-violet-300 rounded-full filter blur-[160px] opacity-40"></div>
-      <div className="absolute top-0 right-7 w-120 h-100 bg-rose-300 rounded-full filter blur-[160px] opacity-40"></div>
+      {/* <div className="absolute -top-2 left-0 w-300 h-120 bg-violet-300 rounded-full filter blur-[160px] opacity-40"></div>
+      <div className="absolute top-0 right-7 w-120 h-100 bg-rose-300 rounded-full filter blur-[160px] opacity-40"></div> */}
 
       {/* Hero Content */}
       <div className="absolute z-10 text-white flex flex-col items-center justify-center">

@@ -6,11 +6,16 @@ import Instagram from "@/assets/svg/instagram.svg";
 import Linkedin from "@/assets/svg/linkedin.svg";
 import Github from "@/assets/svg/github.svg";
 import GitHubCalendar from "react-github-calendar";
+import stars from "@/assets/svg/stars.svg";
 
 export function About() {
   return (
     <>
       <div className="bg-black max-w-screen min-h-screen flex flex-col items-center justify-center text-center mt-[100vh] overflow-x-hidden relative">
+        <div className="z-10 flex justify-center w-full items-start text-[11px] md:text-md mt-15">
+          <img src={stars} alt="Stars" className="w-12" />
+          <h1 className="font-bold">Meet the Maker</h1>
+        </div>
         <div className="max-w-full mx-auto max-h-full p-6 md:p-14">
           <div className="grid grid-cols-1 md:grid-cols-5 grid-rows-none md:grid-rows-1 gap-4">
             {/* Profile Picture */}
@@ -78,7 +83,129 @@ export function About() {
               </div>
             </a>
           </div>
+          <div className="py-6 mt-7">
+            <h3 className="font-bold text-2xl flex justify-items-center mb-3">
+              Experiences
+            </h3>
+
+            {/* Experience Items */}
+            <div className="slider-left">
+              <div className="slider-track-left gap-8">
+                <div className="slide">
+                  <div className="item bg-zinc-900 rounded-xl w-80 text-left p-4 border-r border-l border-violet-400">
+                    <p className="text-lg font-bold mb-6">
+                      Backend Developer at 11th final project school
+                    </p>
+                    <p className="text-gray-600 font-bold mb-2 text-sm">
+                      Jan, 2025 - Mei, 2025 • 5 months
+                    </p>
+                    <p className="text-gray-600 font-semibold text-sm">
+                      11th Final Project at SMKN 1 CIOMAS
+                    </p>
+                  </div>
+                </div>
+
+                <div className="slide">
+                  <div className="item bg-zinc-900 rounded-xl w-80 text-left p-4 border-r border-l border-violet-400">
+                    <p className="text-lg font-bold mb-6">
+                      Backend Developer at 11th final project school
+                    </p>
+                    <p className="text-gray-600 font-bold mb-2 text-sm">
+                      Jan, 2025 - Mei, 2025 • 5 months
+                    </p>
+                    <p className="text-gray-600 font-semibold text-sm">
+                      11th Final Project at SMKN 1 CIOMAS
+                    </p>
+                  </div>
+                </div>
+
+                <div className="slide">
+                  <div className="item bg-zinc-900 rounded-xl w-80 text-left p-4 border-r border-l border-violet-400">
+                    <p className="text-lg font-bold mb-6">
+                      Backend Developer at 11th final project school
+                    </p>
+                    <p className="text-gray-600 font-bold mb-2 text-sm">
+                      Jan, 2025 - Mei, 2025 • 5 months
+                    </p>
+                    <p className="text-gray-600 font-semibold text-sm">
+                      11th Final Project at SMKN 1 CIOMAS
+                    </p>
+                  </div>
+                </div>
+
+                <div className="slide">
+                  <div className="item bg-zinc-900 rounded-xl w-80 text-left p-4 border-r border-l border-violet-400">
+                    <p className="text-lg font-bold mb-6">
+                      Backend Developer at 11th final project school
+                    </p>
+                    <p className="text-gray-600 font-bold mb-2 text-sm">
+                      Jan, 2025 - Mei, 2025 • 5 months
+                    </p>
+                    <p className="text-gray-600 font-semibold text-sm">
+                      11th Final Project at SMKN 1 CIOMAS
+                    </p>
+                  </div>
+                </div>
+                <div className="slide">
+                  <div className="item bg-zinc-900 rounded-xl w-80 text-left p-4 border-r border-l border-violet-400">
+                    <p className="text-lg font-bold mb-6">
+                      Backend Developer at 11th final project school
+                    </p>
+                    <p className="text-gray-600 font-bold mb-2 text-sm">
+                      Jan, 2025 - Mei, 2025 • 5 months
+                    </p>
+                    <p className="text-gray-600 font-semibold text-sm">
+                      11th Final Project at SMKN 1 CIOMAS
+                    </p>
+                  </div>
+                </div>
+
+                <div className="slide">
+                  <div className="item bg-zinc-900 rounded-xl w-80 text-left p-4 border-r border-l border-violet-400">
+                    <p className="text-lg font-bold mb-6">
+                      Backend Developer at 11th final project school
+                    </p>
+                    <p className="text-gray-600 font-bold mb-2 text-sm">
+                      Jan, 2025 - Mei, 2025 • 5 months
+                    </p>
+                    <p className="text-gray-600 font-semibold text-sm">
+                      11th Final Project at SMKN 1 CIOMAS
+                    </p>
+                  </div>
+                </div>
+
+                <div className="slide">
+                  <div className="item bg-zinc-900 rounded-xl w-80 text-left p-4 border-r border-l border-violet-400">
+                    <p className="text-lg font-bold mb-6">
+                      Backend Developer at 11th final project school
+                    </p>
+                    <p className="text-gray-600 font-bold mb-2 text-sm">
+                      Jan, 2025 - Mei, 2025 • 5 months
+                    </p>
+                    <p className="text-gray-600 font-semibold text-sm">
+                      11th Final Project at SMKN 1 CIOMAS
+                    </p>
+                  </div>
+                </div>
+
+                <div className="slide">
+                  <div className="item bg-zinc-900 rounded-xl w-80 text-left p-4 border-r border-l border-violet-400">
+                    <p className="text-lg font-bold mb-6">
+                      Backend Developer at 11th final project school
+                    </p>
+                    <p className="text-gray-600 font-bold mb-2 text-sm">
+                      Jan, 2025 - Mei, 2025 • 5 months
+                    </p>
+                    <p className="text-gray-600 font-semibold text-sm">
+                      11th Final Project at SMKN 1 CIOMAS
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
         <a
           href="/assets/Pdf/CV-ABISAM-HAZIM.pdf"
           download="CV-ABISAM-HAZIM"

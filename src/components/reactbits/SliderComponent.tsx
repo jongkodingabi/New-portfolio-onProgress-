@@ -1,5 +1,4 @@
 import itemsIcons from "@/IconsItems";
-// import Slider from "react-infinite-logo-slider";
 
 export default function SliderComponent() {
   return (

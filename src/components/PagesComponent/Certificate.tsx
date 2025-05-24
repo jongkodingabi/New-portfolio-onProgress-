@@ -22,6 +22,7 @@ export const Certificate = () => {
               title={certificate.title}
               description={certificate.description}
               date={certificate.date}
+              instance={certificate.instance}
             />
           ))}
         </div>
