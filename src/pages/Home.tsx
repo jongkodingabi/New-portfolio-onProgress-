@@ -9,7 +9,6 @@ import { useState } from "react";
 import BlurText from "@/components/reactbits/BlurText";
 import TabComponent from "@/components/PagesComponent/TabComponent";
 import { About } from "@/components/PagesComponent/About";
-
 function Home() {
   const [isLoading, setIsLoading] = useState(false);
 

@@ -18,7 +18,6 @@ function App() {
 
 function AppContent() {
   const location = useLocation();
-
   return (
     <>
       <ScrollToTop />

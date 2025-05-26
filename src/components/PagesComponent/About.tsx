@@ -11,10 +11,10 @@ import Experiences from "./Experiences";
 export function About() {
   return (
     <>
-      <div className="bg-black max-w-screen min-h-screen flex flex-col items-center justify-center text-center mt-[100vh] overflow-x-hidden relative">
-        <div className="z-10 flex justify-center w-full items-start text-[11px] md:text-md mt-15">
-          <img src={stars} alt="Stars" className="w-12" />
+      <div className="bg-black max-w-screen min-h-screen flex flex-col items-center justify-center text-center mt-[100vh] overflow-hidden relative">
+        <div className="z-10 flex justify-between w-full items-start text-[8px] md:text-[11px] gap-3 md:text-md mt-12 px-6 md:px-20">
           <h1 className="font-bold">Meet the Maker</h1>
+          <img src={stars} alt="Stars" className="w-14" />
         </div>
         <div className="max-w-full mx-auto max-h-full p-6 md:p-14">
           <div className="grid grid-cols-5 grid-rows-1 gap-6 p-4">
@@ -48,11 +48,6 @@ export function About() {
             </div>
 
             {/* Section Title */}
-            <div className="col-span-5">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                What I'm listening to & building
-              </h2>
-            </div>
 
             {/* Spotify + GitHub Calendar Combined Section */}
             <div className="col-span-5 grid grid-cols-1 md:grid-cols-5 gap-6">
