@@ -1,5 +1,5 @@
 import "../App.css";
-import { Hero } from "../components/PagesComponent/Hero";
+import Hero from "../components/PagesComponent/Hero";
 import Quote from "../components/PagesComponent/Quote";
 import ContactHeader from "@/components/PagesComponent/ContactHeader";
 import ContactSection from "@/components/PagesComponent/ContactSection";

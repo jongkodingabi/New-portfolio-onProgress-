@@ -4,8 +4,8 @@ const Experiences = () => {
   return (
     <div className="slider-left">
       <div className="slider-track-left gap-8">
-        {experiencesItems.map((exp) => (
-          <div className="slide">
+        {experiencesItems.concat(experiencesItems).map((exp, idx) => (
+          <div className="slide" key={idx}>
             <div className="item bg-zinc-900 rounded-xl w-80 text-left p-4 border-r border-l border-violet-400">
               <p className="text-lg font-bold mb-6">{exp.title}</p>
               <p className="text-gray-600 font-bold mb-2 text-sm">{exp.date}</p>
@@ -15,8 +15,8 @@ const Experiences = () => {
             </div>
           </div>
         ))}
-        {experiencesItems.map((exp) => (
-          <div className="slide">
+        {experiencesItems.concat(experiencesItems).map((exp, idx) => (
+          <div className="slide" key={idx}>
             <div className="item bg-zinc-900 rounded-xl w-80 text-left p-4 border-r border-l border-violet-400">
               <p className="text-lg font-bold mb-6">{exp.title}</p>
               <p className="text-gray-600 font-bold mb-2 text-sm">{exp.date}</p>

@@ -4,50 +4,56 @@ import myPhoto from "@/assets/png/myPhoto.webp";
 
 export function Hero() {
   return (
-    <div className="absolute top-0 bg-white dark:bg-zinc-900 w-screen h-screen flex items-center justify-center text-center overflow-hidden">
-      {/* Masking Gradient at Bottom */}
-      <div className="pointer-events-none absolute bottom-0 left-0 w-full h-32 z-10 bg-gradient-to-b from-transparent to-black" />
+    <>
+      <div className="absolute top-0 bg-white dark:bg-zinc-900 w-screen h-screen flex items-center justify-center text-center overflow-hidden p-8">
+        {/* Masking Gradient at Bottom */}
+        <div className="pointer-events-none absolute bottom-0 left-0 w-full h-32 z-10 bg-gradient-to-b from-transparent to-black" />
 
-      {/* Header */}
-      <Header className="absolute flex justify-between text-base sm:text-lg md:text-xl left-0 w-full z-20 bg-gradient-to-t from-slate-300 to-gray-500 bg-clip-text text-transparent" />
+        {/* Header */}
+        <Header className="absolute flex justify-between text-base sm:text-lg md:text-xl left-0 w-full z-20 bg-gradient-to-t from-slate-300 to-gray-500 bg-clip-text text-transparent" />
 
-      {/* Hero Content */}
-      <div className="absolute z-10 text-white flex flex-col items-center justify-center top-40 md:top-10">
-        {/* Nama */}
-        <span className="text-[100px] md:text-[200px] font-extrabold">
-          ABISAM
-        </span>
+        {/* Hero Text */}
+        <div className="absolute z-0 text-white flex flex-col items-center justify-center top-32 md:top-18 gap-3 leading-none">
+          <span className="text-[60px] md:text-[150px] font-extrabold opacity-30">
+            PORTFOLIO
+          </span>
+          <span className="text-[60px] md:text-[140px] font-extrabold">
+            ABISAM
+          </span>
+          <span className="text-[60px] md:text-[140px] font-extrabold">
+            HAZIM
+          </span>
+        </div>
 
-        {/* Foto */}
-        <img
-          src={myPhoto}
-          alt="myPhoto"
-          className="w-32 sm:w-40 md:w-50 object-contain rounded-4xl absolute mt-4 mb-4 hover:opacity-40 transition-opacity"
-        />
+        {/* Foto - Pusat dan di atas teks */}
+        <div className="absolute z-20 top-[40%] md:top-[26%]">
+          <img
+            src={myPhoto}
+            alt="myPhoto"
+            className="w-32 sm:w-40 md:w-60 object-cover rounded-3xl shadow-xl hover:opacity-40 hover:scale-105 hover:rotate-1 transition-all duration-300 ease-in-out"
+          />
+        </div>
 
-        <span className="text-[100px] md:text-[200px] font-extrabold">
-          HAZIM
-        </span>
-
-        {/* Mouse Scroll */}
-        {/* <div className="p-2">
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              window.scrollBy({
-                top: window.innerHeight / 2,
-                behavior: "smooth",
-              });
-            }}
+        {/* Dock Nav */}
+        <div className="absolute bottom-18 animate-bounce">
+          <svg
+            className="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
           >
-            <span className="scroll-btn">
-              <span className="mouse"></span>
-            </span>
-          </a>
-        </div> */}
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </div>
 
-        {/* Lokasi */}
+        <Navigation />
+
+        {/* Lokasi - di luar hero section */}
         <div className="fixed bottom-40 left-2 sm:left-4 bg-zinc-800 text-white px-3 py-2 sm:px-4 sm:py-2 rounded-r-full flex items-center space-x-2 shadow-lg z-40">
           <div className="text-sm sm:text-base text-left leading-tight">
             <p>Located in</p>
@@ -70,11 +76,24 @@ export function Hero() {
             </svg>
           </div>
         </div>
-      </div>
 
-      {/* Dock Nav */}
-      <Navigation />
-    </div>
+        <div className="slider-right-2 mt-150 z-40">
+          <div className="slider-track-right-2 text-3xl">
+            {/* Konten asli */}
+            <h1 className="slide2 font-bold">WEB DEVELOPER</h1>
+            <h1 className="slide2 font-bold">FRONTEND DEVELOPER</h1>
+            <h1 className="slide2 font-bold">BACKEND DEVELOPER</h1>
+
+            {/* Duplikasi agar seamless */}
+            <h1 className="slide2 font-bold">WEB DEVELOPER</h1>
+            <h1 className="slide2 font-bold">FRONTEND DEVELOPER</h1>
+            <h1 className="slide2 font-bold">BACKEND DEVELOPER</h1>
+          </div>
+        </div>
+
+        {/* Copy of items */}
+      </div>
+    </>
   );
 }
 

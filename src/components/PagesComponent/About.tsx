@@ -13,7 +13,7 @@ export function About() {
     <>
       <div className="bg-black max-w-screen min-h-screen flex flex-col items-center justify-center text-center mt-[100vh] overflow-hidden relative">
         <div className="z-10 flex justify-between w-full items-start text-[8px] md:text-[11px] gap-3 md:text-md mt-12 px-6 md:px-20">
-          <h1 className="font-bold">Meet the Maker</h1>
+          <h1 className="font-bold">About Me</h1>
           <img src={stars} alt="Stars" className="w-14" />
         </div>
         <div className="max-w-full mx-auto max-h-full p-6 md:p-14">
@@ -53,14 +53,16 @@ export function About() {
             <div className="col-span-5 grid grid-cols-1 md:grid-cols-5 gap-6">
               {/* Spotify Embed */}
               <div className="col-span-1 md:col-span-2 bg-zinc-900 border-r border-l border-violet-400 p-4 rounded-xl shadow-md flex items-center justify-center">
-                <iframe
-                  src="https://open.spotify.com/embed/track/5ihDGnhQgMA0F0tk9fNLlA"
-                  width="100%"
-                  height="240"
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  loading="lazy"
-                  className="rounded-lg transition-all duration-500 hover:scale-[1.01]"
-                ></iframe>
+                <div className="w-full max-w-md mx-auto">
+                  <iframe
+                    src="https://open.spotify.com/embed/track/4M6pDt6pICsMiiwXGkufLe"
+                    width="100%"
+                    height="240"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                    className="rounded-lg transition-all duration-500 hover:scale-[1.01]"
+                  ></iframe>
+                </div>
               </div>
 
               {/* GitHub Calendar */}
