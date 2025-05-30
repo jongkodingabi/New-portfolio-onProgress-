@@ -26,7 +26,7 @@ export function Hero() {
         </div>
 
         {/* Foto - Pusat dan di atas teks */}
-        <div className="absolute z-20 top-[40%] md:top-[26%]">
+        <div className="absolute z-20 top-[28%] md:top-[26%]">
           <img
             src={myPhoto}
             alt="myPhoto"
@@ -77,8 +77,8 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="slider-right-2 mt-150 z-40">
-          <div className="slider-track-right-2 text-3xl">
+        <div className="slider-right-2 mt-80 md:mt-150 z-40">
+          <div className="slider-track-right-2 text-md md:text-2xl">
             {/* Konten asli */}
             <h1 className="slide2 font-bold">WEB DEVELOPER</h1>
             <h1 className="slide2 font-bold">FRONTEND DEVELOPER</h1>
