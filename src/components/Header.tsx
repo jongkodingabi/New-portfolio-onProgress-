@@ -17,7 +17,7 @@ export default function Header({ className }: className) {
         <img
           src={myLogo}
           alt="myLogo"
-          className="w-10 md:w-16 ml-4 mt-4"
+          className="w-10 md:w-16 ml-4 mt-4 md:mt-0"
           loading="lazy"
         />
         <p className="text-sm font-bold text-white mt-8">

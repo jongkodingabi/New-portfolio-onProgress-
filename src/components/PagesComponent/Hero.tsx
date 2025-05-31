@@ -30,6 +30,7 @@ export function Hero() {
           <img
             src={myPhoto}
             alt="myPhoto"
+            fetchPriority="high"
             className="w-32 sm:w-40 md:w-60 object-cover rounded-3xl shadow-xl hover:opacity-40 hover:scale-105 hover:rotate-1 transition-all duration-300 ease-in-out"
           />
         </div>
