@@ -9,7 +9,7 @@ export function Hero() {
         {/* Masking Gradient at Bottom */}
         <div className="absolute inset-0 z-10">
           <svg
-            className="absolute -left-40 -top-20 opacity-30 w-[600px] h-[600px] rotate-12"
+            className="absolute -left-40 -top-20 opacity-30 w-[600px] h-[600px] rotate-12 animate-pulse"
             viewBox="0 0 600 600"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -20,14 +20,14 @@ export function Hero() {
             />
             <defs>
               <radialGradient id="gradLeft" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#00ffcc" stop-opacity="0.3" />
-                <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0" />
+                <stop offset="0%" stop-color="#c084fc" stop-opacity="0.3" />
+                <stop offset="100%" stop-color=" #c084fc" stop-opacity="0" />
               </radialGradient>
             </defs>
           </svg>
 
           <svg
-            className="absolute -right-40 -top-20 opacity-30 w-[600px] h-[600px] -rotate-12"
+            className="absolute -right-40 -top-20 opacity-30 w-[600px] h-[600px] -rotate-12 animate-pulse"
             viewBox="0 0 600 600"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -38,8 +38,8 @@ export function Hero() {
             />
             <defs>
               <radialGradient id="gradRight" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#00ffcc" stop-opacity="0.3" />
-                <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0" />
+                <stop offset="0%" stop-color="#c084fc" stop-opacity="0.3" />
+                <stop offset="100%" stop-color=" #c084fc" stop-opacity="0" />
               </radialGradient>
             </defs>
           </svg>
@@ -62,14 +62,17 @@ export function Hero() {
           </span>
         </div>
 
-        {/* Foto - Pusat dan di atas teks */}
-        <div className="absolute z-20 top-[28%] md:top-[26%]">
-          <img
-            src={myPhoto}
-            alt="myPhoto"
-            fetchPriority="high"
-            className="w-32 sm:w-40 md:w-60 object-cover rounded-3xl shadow-xl hover:opacity-40 hover:scale-105 hover:rotate-1 transition-all duration-300 ease-in-out"
-          />
+        {/* Photo - Centered above text */}
+        <div className="absolute z-20 top-[22%] left-1/2 -translate-x-1/2">
+          <div className="relative group">
+            <img
+              src={myPhoto}
+              alt="myPhoto"
+              fetchPriority="high"
+              className="w-32 sm:w-44 md:w-64 object-cover rounded-3xl shadow-2xl border-4 border-purple-400/30 group-hover:opacity-60 group-hover:scale-105 group-hover:rotate-1 transition-all duration-300 ease-in-out"
+            />
+            <div className="absolute inset-0 rounded-3xl border-2 border-white/10 group-hover:border-violet-400/60 transition-all duration-300 pointer-events-none" />
+          </div>
         </div>
 
         {/* Dock Nav */}
@@ -92,15 +95,15 @@ export function Hero() {
         <Navigation />
 
         {/* Lokasi - di luar hero section */}
-        <div className="fixed bottom-40 left-2 sm:left-4 bg-zinc-800 text-white px-3 py-2 sm:px-4 sm:py-2 rounded-r-full flex items-center space-x-2 shadow-lg z-40">
+        <div className="fixed bottom-40 left-2 sm:left-4 bg-zinc-900/90 text-white px-4 py-2 sm:px-5 sm:py-3 rounded-r-full flex items-center space-x-3 shadow-2xl z-40 backdrop-blur-md border-l-4 border-purple-400/40">
           <div className="text-sm sm:text-base text-left leading-tight">
-            <p>Located in</p>
-            <p className="font-medium">Bogor, Indonesia</p>
+            <p className="opacity-80">Located in</p>
+            <p className="font-semibold tracking-wide">Bogor, Indonesia</p>
           </div>
-          <div className="bg-black p-2 sm:p-3 rounded-full">
+          <div className="bg-black/70 p-2 sm:p-3 rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 sm:h-6 sm:w-6 text-gray-200 animate-spin"
+              className="h-5 w-5 sm:h-6 sm:w-6 text-purple-300 animate-spin"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

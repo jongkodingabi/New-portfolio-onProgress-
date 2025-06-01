@@ -56,7 +56,7 @@ export default function ProjectsCards({
             </div>
           </div>
         </div>
-        <div className="absolute rounded-xl bottom-0 left-0 w-0 h-1 bg-white group-hover:w-full transition-all duration-300"></div>
+        <div className="absolute rounded-xl bottom-0 left-0 w-0 h-1 bg-purple-400 group-hover:w-full transition-all duration-300"></div>
       </div>
     </>
   );
