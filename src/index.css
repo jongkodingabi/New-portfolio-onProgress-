@@ -348,3 +348,8 @@ button:focus-visible {
   padding-right: 50px;
   white-space: nowrap;
 }
+
+.hero {
+  background-image: radial-gradient(#222 1px, transparent 1px);
+  background-size: 20px 20px;
+}

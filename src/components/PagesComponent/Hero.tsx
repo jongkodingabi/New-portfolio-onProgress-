@@ -5,8 +5,45 @@ import myPhoto from "@/assets/png/myPhoto.webp";
 export function Hero() {
   return (
     <>
-      <div className="absolute top-0 bg-white dark:bg-zinc-900 w-screen h-screen flex items-center justify-center text-center overflow-hidden p-8">
+      <div className="hero absolute top-0 w-screen h-screen flex items-center justify-center text-center overflow-hidden p-8">
         {/* Masking Gradient at Bottom */}
+        <div className="absolute inset-0 z-10">
+          <svg
+            className="absolute -left-40 -top-20 opacity-30 w-[600px] h-[600px] rotate-12"
+            viewBox="0 0 600 600"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M300,0 C450,150 450,450 300,600 C150,450 150,150 300,0 Z"
+              fill="url(#gradLeft)"
+            />
+            <defs>
+              <radialGradient id="gradLeft" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#00ffcc" stop-opacity="0.3" />
+                <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+          </svg>
+
+          <svg
+            className="absolute -right-40 -top-20 opacity-30 w-[600px] h-[600px] -rotate-12"
+            viewBox="0 0 600 600"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M300,0 C450,150 450,450 300,600 C150,450 150,150 300,0 Z"
+              fill="url(#gradRight)"
+            />
+            <defs>
+              <radialGradient id="gradRight" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#00ffcc" stop-opacity="0.3" />
+                <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+          </svg>
+        </div>
         <div className="pointer-events-none absolute bottom-0 left-0 w-full h-32 z-10 bg-gradient-to-b from-transparent to-black" />
 
         {/* Header */}
