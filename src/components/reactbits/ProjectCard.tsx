@@ -27,7 +27,6 @@ export default function ProjectsCards({
             <img
               src={imageUrl}
               alt="Project Image"
-              loading="lazy"
               fetchPriority="high"
               className="w-full h-48 sm:h-64 md:h-full object-cover opacity-40 group-hover:opacity-100 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300"
             />
