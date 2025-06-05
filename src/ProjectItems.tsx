@@ -6,17 +6,18 @@ import TodoApp from "@/assets/projects/To-Do List App.webp";
 import Equran from "@/assets/projects/e-quran-project.webp";
 import BangbaraPOS from "@/assets/projects/BangbaraPos-project.webp";
 import BlogApp from "@/assets/projects/blog-app.webp";
+import Drawnic from "@/assets/projects/drawnic.webp";
 
 const itemsProjects = [
   {
     id: 1,
-    image: YourMeals,
-    title: "Your Meals",
+    image: Drawnic,
+    title: "DrawNic",
     description:
-      "A web application that allows users to search for recipes and save their favorite meals.",
-    tags: ["Vue.js", "Tailwind CSS", "MealDB API"],
-    link: "https://your-meals-app.netlify.app/",
-    github: "https://github.com/jongkodingabi/Meals-App",
+      "The lottery or player drawing system for your mini soccer game.",
+    tags: ["React", "Typescript", "Laravel API"],
+    link: "https://drawnic.pplgsmkn1ciomas.my.id/",
+    github: "https://github.com/jongkodingabi/Drawnic-FE",
     cta: "View site",
     isLinked: true,
     category: "Frontend",
@@ -36,17 +37,18 @@ const itemsProjects = [
   },
   {
     id: 3,
-    image: BeedeGo,
-    title: "BeedeGo",
+    image: BangbaraPOS,
+    title: "BangbaraPOS",
     description:
-      "A simple landing page for a design service, showcasing their projects and services.",
-    tags: ["Vue.js", "Tailwind CSS"],
-    link: "https://beedego-abisam-hazims-projects.vercel.app/",
-    github: "https://github.com/jongkodingabi/BeeDeGo",
+      "A project that I worked on with my team to create an ordering system for UMKM",
+    tags: ["Laravel", "TailwindCSS", "Midtrans"],
+    link: "https://bangbarapos.my.id/",
+    github: "https://github.com/fallennsyahid/bangbaraPOS",
     cta: "View site",
     isLinked: true,
-    category: "Frontend",
+    category: "Backend",
   },
+
   {
     id: 4,
     image: KataKita,
@@ -88,16 +90,16 @@ const itemsProjects = [
   },
   {
     id: 7,
-    image: BangbaraPOS,
-    title: "BangbaraPOS",
+    image: BeedeGo,
+    title: "BeedeGo",
     description:
-      "A project that I worked on with my team to create an ordering system for UMKM",
-    tags: ["Laravel", "TailwindCSS", "Midtrans"],
-    link: "#",
-    github: "https://github.com/fallennsyahid/bangbaraPOS",
-    cta: "View github",
-    isLinked: false,
-    category: "Backend",
+      "A simple landing page for a design service, showcasing their projects and services.",
+    tags: ["Vue.js", "Tailwind CSS"],
+    link: "https://beedego-abisam-hazims-projects.vercel.app/",
+    github: "https://github.com/jongkodingabi/BeeDeGo",
+    cta: "View site",
+    isLinked: true,
+    category: "Frontend",
   },
   {
     id: 8,
@@ -111,6 +113,19 @@ const itemsProjects = [
     cta: "View github",
     isLinked: false,
     category: "Backend",
+  },
+  {
+    id: 9,
+    image: YourMeals,
+    title: "Your Meals",
+    description:
+      "A web application that allows users to search for recipes and save their favorite meals.",
+    tags: ["Vue.js", "Tailwind CSS", "MealDB API"],
+    link: "https://your-meals-app.netlify.app/",
+    github: "https://github.com/jongkodingabi/Meals-App",
+    cta: "View site",
+    isLinked: true,
+    category: "Frontend",
   },
 ];
 
