@@ -36,6 +36,8 @@ export default function ProjectsCards({
             <img
               src={imageUrl}
               alt="Form Builder Preview"
+              loading="lazy"
+              fetchPriority="high"
               className="w-full h-auto object-cover rounded-xl border border-zinc-800 transition-transform duration-500 group-hover:scale-105 group-hover:rotate-3"
               style={{ filter: "brightness(0.95) saturate(1.2)" }}
             />
