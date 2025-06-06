@@ -5,7 +5,7 @@ import myPhoto from "@/assets/png/myPhoto.webp";
 export function Hero() {
   return (
     <>
-      <div className="hero absolute top-0 w-screen h-screen flex items-center justify-center text-center overflow-hidden p-8">
+      <div className="hero absolute top-0 w-screen h-screen flex items-center justify-center text-center p-8">
         {/* Masking Gradient at Bottom */}
         <div className="absolute inset-0 z-10">
           <svg
@@ -69,7 +69,7 @@ export function Hero() {
               src={myPhoto}
               alt="myPhoto"
               fetchPriority="high"
-              className="w-32 sm:w-44 md:w-64 object-cover rounded-3xl shadow-2xl border-4 border-purple-400/30 group-hover:opacity-60 group-hover:scale-105 group-hover:rotate-1 transition-all duration-300 ease-in-out"
+              className="w-32 sm:w-44 md:w-64 object-cover rounded-3xl border-4 border-purple-400/30 group-hover:opacity-60 group-hover:scale-105 group-hover:rotate-1 transition-all duration-300 ease-in-out"
             />
             <div className="absolute inset-0 rounded-3xl border-2 border-white/10 group-hover:border-violet-400/60 transition-all duration-300 pointer-events-none" />
           </div>

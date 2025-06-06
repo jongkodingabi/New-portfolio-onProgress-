@@ -5,7 +5,7 @@ export default function SliderComponent() {
     <div className="slider-right">
       <div className="slider-track-right">
         {itemsIcons.map((item) => (
-          <div className="slide">
+          <div className="slide" key={item.src}>
             <img
               src={item.src}
               alt={item.src}
@@ -13,8 +13,8 @@ export default function SliderComponent() {
             />
           </div>
         ))}
-        {itemsIcons.map((item) => (
-          <div className="slide">
+        {itemsIcons.map((item, idx) => (
+          <div className="slide" key={`duplicate-${item.src}-${idx}`}>
             <img
               src={item.src}
               alt={item.src}

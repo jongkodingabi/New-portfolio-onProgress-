@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { VscHome, VscCode } from "react-icons/vsc";
-import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import Dock from "@/components/reactbits/Dock";
+import { GrCertificate } from "react-icons/gr";
 
 export default function Navigation() {
   const navigate = useNavigate();
@@ -19,13 +19,9 @@ export default function Navigation() {
       onClick: () => navigate("/projects"),
     },
     {
-      icon: <FaLinkedin size={20} />,
-      label: "Linkedin",
-      onClick: () =>
-        window.open(
-          "https://www.linkedin.com/in/abisam-hazim-5853b4345",
-          "_blank"
-        ),
+      icon: <GrCertificate size={20} />,
+      label: "Certificates",
+      onClick: () => navigate("/certificates"),
     },
     {
       icon: <FaGithub size={20} />,

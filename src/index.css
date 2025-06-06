@@ -214,6 +214,7 @@ button:focus-visible {
   border: 3px solid white;
   border-radius: 23px;
 }
+
 .scroll-btn .mouse > * {
   position: absolute;
   display: block;
@@ -330,6 +331,7 @@ button:focus-visible {
 
 .slider-track-right-2 {
   display: flex;
+  /* height: 150px; */
   width: fit-content;
   animation: scrollRight2 25s linear infinite;
 }
@@ -352,4 +354,26 @@ button:focus-visible {
 .hero {
   background-image: radial-gradient(#222 1px, transparent 1px);
   background-size: 20px 20px;
+}
+
+.wrapper {
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.wrapper:before {
+  content: "";
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3' numOctaves='8' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 60px;
+  opacity: 0.22;
+  top: 0;
+  z-index: -1;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  min-height: 215%;
 }
