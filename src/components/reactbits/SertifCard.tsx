@@ -3,7 +3,7 @@ type CardsProps = {
   description: string;
   imageUrl: string;
   date: string;
-  instance: string;
+  instance: string[];
 };
 export default function ProjectsCards({
   title,
