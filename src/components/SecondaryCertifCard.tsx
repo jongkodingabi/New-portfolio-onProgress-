@@ -4,7 +4,7 @@ type SecondaryCertifCardProps = {
   title: string;
   description: string;
   src: string;
-  instance: string;
+  instance: string[];
   alt: string;
   onClick?: () => void;
 };
@@ -26,11 +26,17 @@ const SecondaryCertifCard = ({
         <h2 className="text-2xl font-semibold mb-2">{title}</h2>
         <p className="text-sm text-gray-300 mb-4">{description}</p>
 
-        {/* Tags */}
+        {/* Placeholder for additional content */}
         <div className="flex flex-wrap gap-2 mb-4">
-          <span className="bg-gray-700 text-sm px-3 py-1 rounded-md">
-            {instance}
-          </span>
+          {/* Tags */}
+          {instance.map((tag, index) => (
+            <span
+              key={index}
+              className="bg-gray-800 text-xs px-3 py-1 rounded-full mr-2 mb-2"
+            >
+              {tag}
+            </span>
+          ))}
         </div>
 
         {/* Icons */}
