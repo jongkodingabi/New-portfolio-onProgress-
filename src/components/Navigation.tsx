@@ -32,7 +32,7 @@ export default function Navigation() {
 
   return (
     <Dock
-      className="z-99 fixed bg-black"
+      className="z-50 fixed bottom-4 left-1/2 -translate-x-1/2 bg-black rounded-xl p-2"
       items={items}
       panelHeight={68}
       baseItemSize={50}

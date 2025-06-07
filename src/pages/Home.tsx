@@ -9,6 +9,7 @@ import { useState } from "react";
 import BlurText from "@/components/reactbits/BlurText";
 import TabComponent from "@/components/PagesComponent/TabComponent";
 import { About } from "@/components/PagesComponent/About";
+import Navigation from "@/components/Navigation";
 function Home() {
   const [isLoading, setIsLoading] = useState(false);
 
@@ -44,27 +45,28 @@ function Home() {
         </div>
       ) : (
         <main>
-          <section className="overflow-hidden scrollbar-hidden">
+          <section className="overflow-x-hidden scrollbar-hidden">
             <Hero />
           </section>
-          <section className="overflow-hidden" id="about">
+          <section className="overflow-x-hidden" id="about">
             <About />
           </section>
-          <section className="overflow-hidden" id="projects">
+          <section className="overflow-x-hidden" id="projects">
             <TabComponent />
           </section>
-          <section className="overflow-hidden" id="quote">
+          <section className="overflow-x-hidden" id="quote">
             <Quote />
           </section>
-          <header className="overflow-hidden" id="contact-header">
+          <header className="overflow-x-hidden" id="contact-header">
             <ContactHeader />
           </header>
-          <section className="overflow-hidden" id="contact-section">
+          <section className="overflow-x-hidden" id="contact-section">
             <ContactSection />
           </section>
-          <footer className="overflow-hidden" id="footer">
+          <footer className="overflow-x-hidden" id="footer">
             <Footer />
           </footer>
+          <Navigation />
         </main>
       )}
     </>

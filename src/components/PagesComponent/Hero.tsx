@@ -1,11 +1,10 @@
 import Header from "@/components/Header";
-import Navigation from "../Navigation";
 import myPhoto from "@/assets/png/myPhoto.webp";
 
 export function Hero() {
   return (
     <>
-      <div className="hero absolute top-0 w-screen h-screen flex items-center justify-center text-center p-8">
+      <div className="hero absolute top-0 w-screen h-screen flex items-center justify-center text-center p-8 overflow-x-hidden">
         {/* Masking Gradient at Bottom */}
         <div className="absolute inset-0 z-10">
           <svg
@@ -91,8 +90,6 @@ export function Hero() {
             />
           </svg>
         </div>
-
-        <Navigation />
 
         {/* Lokasi - di luar hero section */}
         <div className="fixed bottom-40 left-2 sm:left-4 bg-zinc-900/90 text-white px-4 py-2 sm:px-5 sm:py-3 rounded-r-full flex items-center space-x-3 shadow-2xl z-40 backdrop-blur-md border-l-4 border-purple-400/40">

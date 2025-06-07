@@ -29,7 +29,7 @@ const CertificatePage = () => {
   return (
     <>
       <div
-        className="wrapper overflow-hidden flex flex-col min-h-screen items-center justify-center"
+        className="wrapper overflow-hidden flex flex-col min-h-full items-center justify-center"
         // onClick={() => setModal(false)}
       >
         <div className="py-10 mt-14 flex justify-between gap-2">
