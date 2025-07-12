@@ -27,7 +27,7 @@ const itemsProjects = [
     image: Savora,
     title: "Savora",
     description:
-      "Savora is a personal finance app I built to help users manage their income, expenses, and financial goals through an intuitive and interactive interface.",
+      "Savora is a personal finance app I built to help users manage their income, expenses, and financial goals through an interactive interface.",
     tags: ["Next.JS", "Typescript", "Supabase"],
     link: "https://savora-finance-app.vercel.app",
     github: "https://github.com/jongkodingabi/Savora-finance-app",
