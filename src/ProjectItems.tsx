@@ -5,8 +5,8 @@ import Caseths from "@/assets/projects/caseth-la-magasin_web.webp";
 import TodoApp from "@/assets/projects/To-Do List App.webp";
 import Equran from "@/assets/projects/e-quran-project.webp";
 import BangbaraPOS from "@/assets/projects/BangbaraPos-project.webp";
-import BlogApp from "@/assets/projects/blog-app.webp";
 import Drawnic from "@/assets/projects/drawnic.webp";
+import Savora from "@/assets/projects/savora-mock.webp";
 
 const itemsProjects = [
   {
@@ -24,13 +24,13 @@ const itemsProjects = [
   },
   {
     id: 2,
-    image: Equran,
-    title: "E-Quran web",
+    image: Savora,
+    title: "Savora",
     description:
-      "E-Quran Web is an online platform that allows users to read, search, and listen to the Quran.",
-    tags: ["React", "Typescript", "E-quran API"],
-    link: "https://e-qur-an-web.vercel.app/",
-    github: "https://github.com/jongkodingabi/E-Qur-an",
+      "Savora is a personal finance app I built to help users manage their income, expenses, and financial goals through an intuitive and interactive interface.",
+    tags: ["Next.JS", "Typescript", "Supabase"],
+    link: "https://savora-finance-app.vercel.app",
+    github: "https://github.com/jongkodingabi/Savora-finance-app",
     cta: "View site",
     isLinked: true,
     category: "Frontend",
@@ -64,6 +64,19 @@ const itemsProjects = [
   },
   {
     id: 5,
+    image: Equran,
+    title: "E-Quran web",
+    description:
+      "E-Quran Web is an online platform that allows users to read, search, and listen to the Quran.",
+    tags: ["React", "Typescript", "E-quran API"],
+    link: "https://e-qur-an-web.vercel.app/",
+    github: "https://github.com/jongkodingabi/E-Qur-an",
+    cta: "View site",
+    isLinked: true,
+    category: "Frontend",
+  },
+  {
+    id: 6,
     image: Caseths,
     title: "Caseths",
     description:
@@ -76,7 +89,7 @@ const itemsProjects = [
     category: "Backend",
   },
   {
-    id: 6,
+    id: 7,
     image: TodoApp,
     title: "To-Do App",
     description:
@@ -89,7 +102,7 @@ const itemsProjects = [
     category: "Frontend",
   },
   {
-    id: 7,
+    id: 8,
     image: BeedeGo,
     title: "BeedeGo",
     description:
@@ -101,19 +114,7 @@ const itemsProjects = [
     isLinked: true,
     category: "Frontend",
   },
-  {
-    id: 8,
-    image: BlogApp,
-    title: "Blogs App",
-    description:
-      "A website created using Laravel, which contains a collection of blogs, also has search and pagination",
-    tags: ["Laravel", "TailwindCSS"],
-    link: "#",
-    github: "https://github.com/jongkodingabi/Blog-Web-damy-",
-    cta: "View github",
-    isLinked: false,
-    category: "Backend",
-  },
+
   {
     id: 9,
     image: YourMeals,
