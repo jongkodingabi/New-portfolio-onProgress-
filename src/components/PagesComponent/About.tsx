@@ -113,8 +113,7 @@ export function About() {
         </div>
 
         <a
-          href="/assets/Pdf/CV-ABISAM-HAZIM.pdf"
-          download="CV-ABISAM-HAZIM"
+          href="https://drive.google.com/file/d/1xo2rbJ6l616j9jl0PgRG-0K06F39ctMz/view?usp=sharing"
           className="cursor-pointer"
         >
           <SecondaryButton title="Resume / CV" image={Resume} />
