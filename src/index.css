@@ -245,7 +245,7 @@ button:focus-visible {
 
 .slider-track-right {
   display: flex;
-  width: calc(185px * 24);
+  width: calc(185px * 26);
   animation: scrollRight 17s linear infinite reverse;
   -webkit-animation: scrollRight 17s linear infinite reverse;
 }

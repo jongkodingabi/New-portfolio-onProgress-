@@ -3,6 +3,7 @@ import Sertif2 from "@/assets/certificate/Sertifikat_2.webp";
 import Sertif3 from "@/assets/certificate/Sertifikat_3.webp";
 import Sertif4 from "@/assets/certificate/Sertifikat_4.webp";
 import Sertif5 from "@/assets/certificate/Sertifikat_5.webp";
+import Sertif6 from "@/assets/certificate/RuangAi_certificate.jpg";
 
 const certificateItems = [
   {
@@ -55,6 +56,16 @@ const certificateItems = [
     date: "September 18, 2023",
     alt: "sertifikat 5",
     instance: ["EDU & EXPO"],
+  },
+  {
+    id: 6,
+    src: Sertif6,
+    title: "Dasar dan Penggunaan Generatif AI",
+    description:
+      "Learn the basics of Generative AI and its ethical and innovative application.",
+    date: "Juni 22, 2025",
+    alt: "sertifikat 5",
+    instance: ["Codepolitan"],
   },
 ];
 

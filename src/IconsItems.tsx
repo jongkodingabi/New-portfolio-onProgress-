@@ -10,6 +10,7 @@ import Figma from "@/assets/skills/Figma.png";
 import Github from "@/assets/skills/GitHub.png";
 import Gitlab from "@/assets/skills/GitLab.png";
 import VSCODE from "@/assets/skills/VisualStudioCode.png";
+import Next from "@/assets/skills/Next.js.png";
 
 const iconsItems = [
   {
@@ -71,6 +72,11 @@ const iconsItems = [
     id: 12,
     src: VSCODE,
     alt: "Visual Studio Code",
+  },
+  {
+    id: 12,
+    src: Next,
+    alt: "Next JS",
   },
 ];
 
